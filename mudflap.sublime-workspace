@@ -1,0 +1,1264 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"resl",
+				"resolve"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"pad",
+				"padding-bottom\tproperty"
+			],
+			[
+				"can",
+				"canvas\twarning"
+			],
+			[
+				"in",
+				"inline-flex\tdisplay"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"mar",
+				"margin-left\tproperty"
+			],
+			[
+				"addC",
+				"addClass\twarning"
+			],
+			[
+				"col-xs",
+				"col-xs-3"
+			],
+			[
+				"marg",
+				"margin-right\tproperty"
+			],
+			[
+				"col-",
+				"col-xs-9"
+			],
+			[
+				"col",
+				"col-xs-4"
+			],
+			[
+				"st",
+				"style\tJSX attribute"
+			],
+			[
+				"getCase",
+				"getCaseId"
+			],
+			[
+				"cas",
+				"caseRepository"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"fun",
+				"function\tkeyword"
+			],
+			[
+				"va",
+				"val2\tparameter"
+			],
+			[
+				"fu",
+				"function\tkeyword"
+			],
+			[
+				"clas",
+				"className\tproperty"
+			],
+			[
+				"has",
+				"toHaveBeenCalledTimes\tmethod"
+			],
+			[
+				"tob",
+				"toBeTruthy\tmethod"
+			],
+			[
+				"width",
+				"max-width"
+			],
+			[
+				"mi",
+				"margin-right"
+			],
+			[
+				"cla",
+				"className\tproperty"
+			],
+			[
+				"s",
+				"state\tReact: this.state"
+			],
+			[
+				"get",
+				"getDate\tmethod"
+			],
+			[
+				"tho",
+				"throws"
+			],
+			[
+				"fi",
+				"filter\tmethod"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"borderCo",
+				"borderColor\tproperty"
+			],
+			[
+				"border",
+				"borderRadius\tproperty"
+			],
+			[
+				"a",
+				"async\tkeyword"
+			],
+			[
+				"auth",
+				"authProps\tlet"
+			],
+			[
+				"Requir",
+				"requireAuth\talias"
+			],
+			[
+				"befo",
+				"beforeEach\tvar"
+			],
+			[
+				"Auth",
+				"AuthenticationProps\tinterface"
+			],
+			[
+				"DAT",
+				"DATES_KEY\tproperty"
+			],
+			[
+				"BAA",
+				"BAA_COMPONENTS\tproperty"
+			],
+			[
+				"m",
+				"margin-left"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"ju",
+				"justifyItems\tproperty"
+			],
+			[
+				"h",
+				"History\tinterface"
+			],
+			[
+				"Ele",
+				"ComponentElement\tinterface"
+			],
+			[
+				"padding",
+				"padding\tproperty"
+			],
+			[
+				"imp",
+				"important"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main/resources/config/application.yml",
+			"settings":
+			{
+				"buffer_size": 4813,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/resources/config/application-dev.yml",
+			"settings":
+			{
+				"buffer_size": 4575,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 281 files for \"Welcome, Java Hipster\"\n\nC:\\Users\\Bret\\Desktop\\Desktop\\local_repos\\rabtrade\\mudflap\\src\\main\\webapp\\app\\modules\\home\\home.tsx:\n   22        <Row>\n   23          <Col md=\"9\">\n   24:           <h2>Welcome, Java Hipster!</h2>\n   25            <p className=\"lead\">This is your homepage</p>\n   26            {account && account.login ? (\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 376,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "src/main/webapp/app/modules/home/home.tsx",
+			"settings":
+			{
+				"buffer_size": 5583,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/webapp/app/modules/home/home.scss",
+			"settings":
+			{
+				"buffer_size": 366,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Xdebug",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"Xde",
+				"Xdebug: Stop Debugging"
+			],
+			[
+				"Xdeb",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install\t",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mudflap",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mudflap/src",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mudflap/src/main",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mudflap/src/main/resources",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mudflap/src/main/resources/config",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mudflap/src/main/webapp",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mudflap/src/main/webapp/app",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mudflap/src/main/webapp/app/modules",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mudflap/src/main/webapp/app/modules/home"
+	],
+	"file_history":
+	[
+		"/C/Users/Bret/Desktop/stonehedge interview project/test.html",
+		"/C/Users/Bret/Downloads/Compressed/beer_reviews/load_into_postgres.sql",
+		"/C/Users/Bret/Desktop/stonehedge interview project/.gitignore",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/shirt-design.sublime-project",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/test.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/buy.home.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/buy.checkout.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/cart.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/thank-you.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/text.edit.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templatescache.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/mobile-info.html",
+		"/C/Users/Bret/Desktop/test.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/bundle.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/app.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/css/theme.css",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/admin/views/products_edit.tpl.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/css/bootstrap.css",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/admin/css/theme.css",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/index.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/admin/css/bootstrap.css",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/bootstrap.css",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/images.clip-art.html",
+		"/C/Users/Bret/Downloads/Video/Crypto Cradle Course - Trader Cobb - Trader Cobb.ts",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/images.home.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/images.my-images.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/product.browser.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/images.upload.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/product.home.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/text.add.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templates/image.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/templatescache.min.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/ds/js/studio/templatescache.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/translations/theme.css",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/dist/theme.css",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/api/checkout.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/app.log",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/config.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/data/settings.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/api/checkout_pre.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/api/design_templates.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site-deploy/dev-site/info.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site-deploy/dev-site/settings.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site-deploy/dev-site/app.log",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/vendor/tecnickcom/tcpdf/tcpdf.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/Timeline/EditableDate.tsx",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/less/stakeholderResponses.less",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/less/comet.less",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/test/java/gov/gmi/unicorn/controller/StakeholderCommentControllerIT.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/test/java/gov/gmi/unicorn/model/mapping/SummaryToCommentTests.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/StakeholderResponses/StakeholderResponses.tsx",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/controller/DocumentController.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/controller/stakeholder/CollaboratorResponseController.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/domain/stakeholder/CollaboratorResponse.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/dto/DocumentFilter.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/package.json",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/partials/organization.edit.component.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/stakeholderadmin.view.component.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/resources/db/migration/h2/R__0_UsersRoles.sql",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/service/CommentService.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/resources/db/migration/h2/R__0_Users.sql",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/mapping/CaseSummaryCase.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/mapping/SummaryToComment.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/partials/cases/case.summary.view.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/service/stakeholder/StakeholderCommentService.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/resources/application.yml",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/mapping/SummaryToStakeholderCase.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/case.form.component.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/services/list.edit.modal.service.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/partials/navbar.component.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/service/DocumentHistoryService.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/admin.view.component.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/comet.sublime-project",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/partials/modals/request.modal.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/webapp/WEB-INF/static/partials/modals/request.modal.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/service/DocumentService.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/test/java/gov/gmi/unicorn/bootstrap/DocumentLoaderTests.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/test/java/gov/gmi/unicorn/service/CaseHistoryServiceTests.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/test/java/gov/gmi/unicorn/service/DocumentServiceTest.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/test/java/gov/gmi/unicorn/service/DocumentHistoryServiceTest.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/test/java/gov/gmi/unicorn/service/CommentServiceTests.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/test/java/gov/gmi/unicorn/controller/DocumentControllerIT.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/security/access/DocumentModifyCheck.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/service/CaseCommentService.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/services/document.service.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/discussion/add.comment.component.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/discussion/comment.component.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/domain/Document.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/dto/DocumentSummary.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/services/user.service.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/resources/db/migration/common/V1_20190508.0742__NavyStakeholderDiscussionPermissions.sql",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/domain/OperationName.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/resources/db/migration/common/V1_20190506.1146__NavyDiscussionDownloadCFIUSPermission.sql",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/partials/discussion/discussion.view.component.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/discussion/discussion.view.component.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/resources/db/migration/h2/V1_070__AddStakeholderDocuments.sql",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/discussion/comment.documents.component.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/resources/db/migration/common/V1_002__Data.sql",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/resources/db/migration/common/V1_20190506.0828__RequestPermissions.sql",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/pom.xml",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/types/components/documentTypes.ts",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/domain/DocumentType.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/test/java/gov/gmi/unicorn/service/DocumentServiceIT.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/dto/CommentSummary.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/java/gov/gmi/unicorn/model/domain/Comment.java",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/partials/modals/list.edit.modal.html",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/less/less.ts",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/less/navigation.less",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/less/variables.less",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/less/timeline.less",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/index.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/node_modules/react-modal/package.json",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/node_modules/react-modal/dist/react-modal.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/node_modules/react-modal/dist/react-modal.min.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/node_modules/react-modal/lib/index.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/Timeline/Timeline.tsx",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/Cases/Documents/CaseDocumentList.tsx",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/organization.view.component.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet/src/main/frontend/js/components/list.edit.component.js",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/system-of-systems/comet.sublime-project",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/u.group/tmp/system-of-systems/.gitignore",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/.vscode/settings.json",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/index.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/info.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/bootstrap.php",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/.htaccess",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/admin/.htaccess",
+		"/C/Users/Bret/Desktop/Desktop/local_repos/rabtrade/mark-stoddart/shirt-design-cart-site/dev-site/demo/api/.htaccess"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 149.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Welcome, Java Hipster",
+			"postgres"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main/resources/config/application.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								862,
+								865
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1026.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main/resources/config/application-dev.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1313,
+								1332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 376,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										219,
+										240
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main/webapp/app/modules/home/home.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								696,
+								696
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/main/webapp/app/modules/home/home.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "mudflap.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"yml",
+				"src\\main\\resources\\config\\application.yml"
+			],
+			[
+				"Thank",
+				"dev-site\\demo\\dist\\templates\\thank-you.html"
+			],
+			[
+				"thank-you.html",
+				"dev-site\\demo\\dist\\templates\\thank-you.html"
+			],
+			[
+				"index",
+				"dev-site\\demo\\dist\\index.php"
+			],
+			[
+				"them",
+				"dev-site\\demo\\dist\\css\\theme.css"
+			],
+			[
+				"app.js",
+				"dev-site\\demo\\dist\\app.js"
+			],
+			[
+				"theme.",
+				"dev-site\\demo\\dist\\css\\theme.css"
+			],
+			[
+				"templ",
+				"dev-site\\demo\\dist\\templatescache.js"
+			],
+			[
+				"product.home.html",
+				"dev-site\\demo\\dist\\templates\\product.home.html"
+			],
+			[
+				"checkout",
+				"dev-site\\demo\\api\\checkout_pre.php"
+			],
+			[
+				"conf",
+				"dev-site\\demo\\config.php"
+			],
+			[
+				"app.l",
+				"dev-site\\demo\\app.log"
+			],
+			[
+				"app.",
+				"dev-site\\demo\\dist\\app.js"
+			],
+			[
+				"design_temp",
+				"dev-site\\demo\\api\\design_templates.php"
+			],
+			[
+				"set",
+				"dev-site\\demo\\data\\settings.php"
+			],
+			[
+				"tcpdf.php",
+				"dev-site\\demo\\vendor\\tecnickcom\\tcpdf\\tcpdf.php"
+			],
+			[
+				"sett",
+				"dev-site\\demo\\data\\settings.php"
+			],
+			[
+				"check",
+				"dev-site\\demo\\api\\checkout.php"
+			],
+			[
+				"stakeholder.les",
+				"src\\main\\frontend\\less\\stakeholderResponses.less"
+			],
+			[
+				"CaseTimeline.tsx",
+				"src\\main\\frontend\\js\\components\\Timeline\\Timeline.tsx"
+			],
+			[
+				"comet.less",
+				"src\\main\\frontend\\less\\comet.less"
+			],
+			[
+				"Responses.tx",
+				"src\\main\\frontend\\js\\components\\StakeholderResponses\\StakeholderResponses.tsx"
+			],
+			[
+				"StakeholderComment",
+				"src\\test\\java\\gov\\gmi\\unicorn\\controller\\StakeholderCommentControllerIT.java"
+			],
+			[
+				"SummaryToCommentTests.java",
+				"src\\test\\java\\gov\\gmi\\unicorn\\model\\mapping\\SummaryToCommentTests.java"
+			],
+			[
+				"collaboratorResponse",
+				"src\\main\\java\\gov\\gmi\\unicorn\\model\\domain\\stakeholder\\CollaboratorResponse.java"
+			],
+			[
+				"DocumentFilter",
+				"src\\main\\java\\gov\\gmi\\unicorn\\model\\dto\\DocumentFilter.java"
+			],
+			[
+				"DocumentConto",
+				"src\\main\\java\\gov\\gmi\\unicorn\\controller\\DocumentController.java"
+			],
+			[
+				"pack",
+				"src\\main\\frontend\\package.json"
+			],
+			[
+				"userRole",
+				"src\\main\\resources\\db\\migration\\h2\\R__0_UsersRoles.sql"
+			],
+			[
+				"CommentSer",
+				"src\\main\\java\\gov\\gmi\\unicorn\\service\\CommentService.java"
+			],
+			[
+				"StakeholderCommentControllerIT",
+				"src\\test\\java\\gov\\gmi\\unicorn\\controller\\StakeholderCommentControllerIT.java"
+			],
+			[
+				"UserRole",
+				"src\\main\\resources\\db\\migration\\h2\\R__0_UsersRoles.sql"
+			],
+			[
+				"UserSql",
+				"src\\main\\resources\\db\\migration\\h2\\R__0_Users.sql"
+			],
+			[
+				"Comment",
+				"src\\main\\java\\gov\\gmi\\unicorn\\service\\CommentService.java"
+			],
+			[
+				"SummaryToStakeholderCase",
+				"src\\main\\java\\gov\\gmi\\unicorn\\model\\mapping\\SummaryToStakeholderCase.java"
+			],
+			[
+				"appl",
+				"src\\main\\resources\\application.yml"
+			],
+			[
+				"commentService",
+				"src\\main\\java\\gov\\gmi\\unicorn\\service\\CommentService.java"
+			],
+			[
+				"StakeholderCommentService",
+				"src\\main\\java\\gov\\gmi\\unicorn\\service\\stakeholder\\StakeholderCommentService.java"
+			],
+			[
+				"ListEditModalService",
+				"src\\main\\frontend\\js\\services\\list.edit.modal.service.js"
+			],
+			[
+				"stakeholder",
+				"src\\main\\frontend\\less\\stakeholderResponses.less"
+			],
+			[
+				"Stakeholdertx",
+				"src\\main\\frontend\\js\\components\\StakeholderResponses\\StakeholderResponses.tsx"
+			],
+			[
+				"partials/modals/request.modal.html",
+				"src\\main\\frontend\\partials\\modals\\request.modal.html"
+			],
+			[
+				"Documenttests",
+				"src\\test\\java\\gov\\gmi\\unicorn\\bootstrap\\DocumentLoaderTests.java"
+			],
+			[
+				"DocumentSer",
+				"src\\main\\java\\gov\\gmi\\unicorn\\service\\DocumentService.java"
+			],
+			[
+				"DocumentServiceTest",
+				"src\\test\\java\\gov\\gmi\\unicorn\\service\\DocumentServiceTest.java"
+			],
+			[
+				"DocumentHistoryService",
+				"src\\main\\java\\gov\\gmi\\unicorn\\service\\DocumentHistoryService.java"
+			],
+			[
+				"DocumentController",
+				"src\\test\\java\\gov\\gmi\\unicorn\\controller\\DocumentControllerIT.java"
+			],
+			[
+				"DocumentHistorySer ",
+				"src\\main\\java\\gov\\gmi\\unicorn\\service\\DocumentHistoryService.java"
+			],
+			[
+				"DocumentChekc",
+				"src\\main\\java\\gov\\gmi\\unicorn\\security\\access\\DocumentModifyCheck.java"
+			],
+			[
+				"DocumentIT",
+				"src\\test\\java\\gov\\gmi\\unicorn\\controller\\DocumentControllerIT.java"
+			],
+			[
+				"DocumentService",
+				"src\\main\\frontend\\js\\services\\document.service.js"
+			],
+			[
+				"DocumentSu",
+				"src\\main\\java\\gov\\gmi\\unicorn\\model\\dto\\DocumentSummary.java"
+			],
+			[
+				"Document.java",
+				"src\\main\\java\\gov\\gmi\\unicorn\\model\\domain\\Document.java"
+			],
+			[
+				"user.service.js",
+				"src\\main\\frontend\\js\\services\\user.service.js"
+			],
+			[
+				"appli",
+				"src\\main\\resources\\application.yml"
+			],
+			[
+				"Disussion.",
+				"src\\main\\frontend\\partials\\discussion\\discussion.view.component.html"
+			],
+			[
+				"DocumentServi",
+				"src\\main\\frontend\\js\\services\\document.service.js"
+			],
+			[
+				"v1_",
+				"src\\main\\resources\\db\\migration\\common\\V1_002__Data.sql"
+			],
+			[
+				"StakeholderCommentService.java",
+				"src\\main\\java\\gov\\gmi\\unicorn\\service\\stakeholder\\StakeholderCommentService.java"
+			],
+			[
+				"po",
+				"pom.xml"
+			],
+			[
+				"DocumentContorl",
+				"src\\test\\java\\gov\\gmi\\unicorn\\controller\\DocumentControllerIT.java"
+			],
+			[
+				"DocumentTest",
+				"src\\test\\java\\gov\\gmi\\unicorn\\service\\DocumentServiceTest.java"
+			],
+			[
+				"CommentDoc",
+				"src\\main\\frontend\\js\\components\\discussion\\comment.documents.component.js"
+			],
+			[
+				"DocumentChe k",
+				"src\\main\\java\\gov\\gmi\\unicorn\\security\\access\\DocumentModifyCheck.java"
+			],
+			[
+				"documentService",
+				"src\\main\\java\\gov\\gmi\\unicorn\\service\\DocumentService.java"
+			],
+			[
+				"DocumentCol",
+				"src\\main\\java\\gov\\gmi\\unicorn\\controller\\DocumentController.java"
+			],
+			[
+				"DocumentType",
+				"src\\main\\java\\gov\\gmi\\unicorn\\model\\domain\\DocumentType.java"
+			],
+			[
+				"Document",
+				"src\\test\\java\\gov\\gmi\\unicorn\\service\\DocumentServiceIT.java"
+			],
+			[
+				"Comment.java",
+				"src\\main\\java\\gov\\gmi\\unicorn\\model\\domain\\Comment.java"
+			],
+			[
+				"CommentSummary",
+				"src\\main\\java\\gov\\gmi\\unicorn\\model\\dto\\CommentSummary.java"
+			],
+			[
+				"request.modal.html",
+				"src\\main\\frontend\\partials\\modals\\request.modal.html"
+			],
+			[
+				"list.edit.modal.html",
+				"src\\main\\frontend\\partials\\modals\\list.edit.modal.html"
+			],
+			[
+				"variables.",
+				"src\\main\\frontend\\less\\variables.less"
+			],
+			[
+				"Timeline.",
+				"src\\main\\frontend\\less\\timeline.less"
+			],
+			[
+				"StakeholderResponses",
+				"src\\main\\frontend\\js\\components\\StakeholderResponses\\StakeholderResponses.tsx"
+			],
+			[
+				"Timeline",
+				"src\\main\\frontend\\js\\components\\Timeline\\Timeline.tsx"
+			],
+			[
+				"CaseDocumentList",
+				"src\\main\\frontend\\js\\components\\Cases\\Documents\\CaseDocumentList.tsx"
+			],
+			[
+				"CommentService",
+				"src\\test\\java\\gov\\gmi\\unicorn\\service\\CommentServiceTests.java"
+			],
+			[
+				"ind",
+				"dev-site\\demo\\index.php"
+			],
+			[
+				"setting",
+				"dev-site\\demo\\.vscode\\settings.json"
+			],
+			[
+				"TCPDF",
+				"dev-site\\demo\\vendor\\tecnickcom\\tcpdf\\tcpdf.php"
+			],
+			[
+				"info",
+				"dev-site\\demo\\info.php"
+			],
+			[
+				"image",
+				"dev-site\\demo\\api\\image.php"
+			],
+			[
+				"example_058.php",
+				"dev-site\\demo\\vendor\\tecnickcom\\tcpdf\\examples\\example_058.php"
+			],
+			[
+				"example_041",
+				"dev-site\\demo\\vendor\\tecnickcom\\tcpdf\\examples\\example_041.php"
+			],
+			[
+				"example_058",
+				"dev-site\\demo\\vendor\\tecnickcom\\tcpdf\\examples\\example_058.php"
+			],
+			[
+				"example_009",
+				"dev-site\\demo\\vendor\\tecnickcom\\tcpdf\\examples\\example_009.php"
+			],
+			[
+				"autoload",
+				"dev-site\\demo\\api\\autoload.php"
+			],
+			[
+				"checko",
+				"dev-site\\demo\\api\\checkout.php"
+			],
+			[
+				"palette.json",
+				"dev-site\\demo\\data\\palette.json"
+			],
+			[
+				"get_pal",
+				"dev-site\\demo\\api\\get_palette.php"
+			],
+			[
+				"fonts/json/28DaysLater.json",
+				"dev-site\\demo\\data\\fonts\\json\\28DaysLater.json"
+			],
+			[
+				"stting",
+				"dev-site\\demo\\data\\settings.php"
+			],
+			[
+				"get",
+				"dev-site\\demo\\api\\get_products.php"
+			],
+			[
+				"get_products.php",
+				"dev-site\\demo\\api\\get_products.php"
+			],
+			[
+				"settings",
+				"dev-site\\demo\\data\\settings.php"
+			],
+			[
+				"settings.php",
+				"dev-site\\demo\\data\\settings.php"
+			],
+			[
+				"quote_requested",
+				"dev-site\\demo\\data\\emails\\quote_requested.txt"
+			],
+			[
+				"order_placed",
+				"dev-site\\demo\\data\\emails\\order_placed.txt"
+			],
+			[
+				"index.ph",
+				"dev-site\\demo\\dist\\index.php"
+			],
+			[
+				"clip_art.php",
+				"dev-site\\demo\\api\\clip_art.php"
+			],
+			[
+				"categories.yml",
+				"dev-site\\demo\\data\\categories.yml"
+			],
+			[
+				".css",
+				"dev-site\\demo\\dist\\css\\theme.css"
+			],
+			[
+				"app",
+				"dev-site\\demo\\dist\\app.js"
+			],
+			[
+				"image_ordered",
+				"dev-site\\demo\\api\\image_ordered.php"
+			],
+			[
+				"checkout ",
+				"dev-site\\demo\\api\\checkout.php"
+			],
+			[
+				"",
+				"Find Results"
+			],
+			[
+				"Checkou",
+				"dev-site\\demo\\api\\checkout.php"
+			],
+			[
+				"image_ordered.php",
+				"dev-site\\demo\\api\\image_ordered.php"
+			],
+			[
+				"cehckou",
+				"dev-site\\demo\\api\\checkout.php"
+			],
+			[
+				"templa",
+				"dev-site\\demo\\dist\\templatescache.js"
+			],
+			[
+				"quote_requested.txt",
+				"dev-site\\demo\\data\\emails\\quote_requested.txt"
+			],
+			[
+				"orders_view.tpl.php",
+				"dev-site\\demo\\admin\\views\\orders_view.tpl.php"
+			],
+			[
+				"bootstrap.php",
+				"dev-site\\demo\\bootstrap.php"
+			],
+			[
+				"autoload.php",
+				"dev-site\\demo\\api\\autoload.php"
+			],
+			[
+				"BaseController",
+				"dev-site\\demo\\admin\\controllers\\BaseController.php"
+			],
+			[
+				"order",
+				"dev-site\\demo\\admin\\views\\orders.tpl.php"
+			],
+			[
+				"orders.tpl.php",
+				"dev-site\\demo\\admin\\views\\orders.tpl.php"
+			],
+			[
+				"Set",
+				"dev-site\\demo\\data\\settings.php"
+			],
+			[
+				"cart.html",
+				"dev-site\\demo\\dist\\templates\\cart.html"
+			],
+			[
+				"tem",
+				"dev-site\\demo\\dist\\templatescache.js"
+			],
+			[
+				"thank",
+				"dev-site\\demo\\dist\\templates\\thank-you.html"
+			],
+			[
+				"index.php",
+				"dev-site\\demo\\dist\\index.php"
+			],
+			[
+				".igt",
+				".gitignore"
+			],
+			[
+				"checkout_pre.php",
+				"dev-site\\demo\\api\\checkout_pre.php"
+			],
+			[
+				"heckout.php",
+				"dev-site\\demo\\api\\checkout.php"
+			],
+			[
+				"te",
+				"dev-site\\demo\\dist\\templatescache.js"
+			],
+			[
+				"theme.css",
+				"dev-site\\demo\\dist\\css\\theme.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Bret\\Desktop\\Desktop\\local repos\\u.group\\sbir_one\\link\\client\\link-client-reactjs.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"ARMY_ARDEC"
+			]
+		],
+		"width": 1324.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
