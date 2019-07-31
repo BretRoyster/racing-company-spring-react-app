@@ -86,19 +86,22 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
         </h2>
         <Row>
           <Col sm="12">
-            <AvForm onSubmit={this.search}>
-              <AvGroup>
-                <InputGroup>
-                  <AvInput type="text" name="search" value={this.state.search} onChange={this.handleSearch} placeholder="Search" />
-                  <Button className="input-group-addon">
-                    <FontAwesomeIcon icon="search" />
-                  </Button>
-                  <Button type="reset" className="input-group-addon" onClick={this.clear}>
-                    <FontAwesomeIcon icon="trash" />
-                  </Button>
-                </InputGroup>
-              </AvGroup>
-            </AvForm>
+            <br />
+            {
+              // <AvForm onSubmit={this.search}>
+              //   <AvGroup>
+              //     <InputGroup>
+              //       <AvInput type="text" name="search" value={this.state.search} onChange={this.handleSearch} placeholder="Search" />
+              //       <Button className="input-group-addon">
+              //         <FontAwesomeIcon icon="search" />
+              //       </Button>
+              //       <Button type="reset" className="input-group-addon" onClick={this.clear}>
+              //         <FontAwesomeIcon icon="trash" />
+              //       </Button>
+              //     </InputGroup>
+              //   </AvGroup>
+              // </AvForm>
+            }
           </Col>
         </Row>
         <div className="table-responsive">
