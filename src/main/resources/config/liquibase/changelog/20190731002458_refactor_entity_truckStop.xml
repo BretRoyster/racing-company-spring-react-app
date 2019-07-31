@@ -2,14 +2,14 @@
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
     <changeSet author="bret (generated)" id="1564532727647-4">
         <addColumn tableName="truck_stop">
-            <column name="base_price" type="float4">
+            <column name="base_price" type="float4" defaultValue="0">
                 <constraints nullable="false"/>
             </column>
         </addColumn>
     </changeSet>
     <changeSet author="bret (generated)" id="1564532727647-5">
         <addColumn tableName="truck_stop">
-            <column name="city" type="text">
+            <column name="city" type="text" defaultValue="0">
                 <constraints nullable="false"/>
             </column>
         </addColumn>
@@ -21,35 +21,35 @@
     </changeSet>
     <changeSet author="bret (generated)" id="1564532727647-7">
         <addColumn tableName="truck_stop">
-            <column name="opis_price" type="float4">
+            <column name="opis_price" type="float4" defaultValue="0">
                 <constraints nullable="false"/>
             </column>
         </addColumn>
     </changeSet>
     <changeSet author="bret (generated)" id="1564532727647-8">
         <addColumn tableName="truck_stop">
-            <column name="owner_id" type="int8">
+            <column name="owner_id" type="int8" defaultValue="1">
                 <constraints nullable="false"/>
             </column>
         </addColumn>
     </changeSet>
     <changeSet author="bret (generated)" id="1564532727647-9">
         <addColumn tableName="truck_stop">
-            <column name="state" type="text">
+            <column name="state" type="text" defaultValue="0">
                 <constraints nullable="false"/>
             </column>
         </addColumn>
     </changeSet>
     <changeSet author="bret (generated)" id="1564532727647-10">
         <addColumn tableName="truck_stop">
-            <column name="street" type="text">
+            <column name="street" type="text" defaultValue="0">
                 <constraints nullable="false"/>
             </column>
         </addColumn>
     </changeSet>
     <changeSet author="bret (generated)" id="1564532727647-11">
         <addColumn tableName="truck_stop">
-            <column name="zip_code" type="text">
+            <column name="zip_code" type="text" defaultValue="0">
                 <constraints nullable="false"/>
             </column>
         </addColumn>
