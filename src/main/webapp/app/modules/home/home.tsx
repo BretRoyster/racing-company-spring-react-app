@@ -22,40 +22,37 @@ export class Home extends React.Component<IHomeProp> {
       <Row>
         {
           <Col md="12">
-            <h2>Welcome Sharon and Sanjay!</h2>
-            <h3>This is a Spring Boot Java back-end app / with an initial ReactJS FE built with the JHipster tool!</h3>
-            <br />
-            <p>
-              <b>Please NOTE:</b> I'd update the default styles here to match your current app - OR - We could just wire up your current
-              React app as your end-user's client at first.
-            </p>
-            <p>Either way it shouldn't be more than a few hours to port all of that over.</p>
-
-            <p>I'd also get rid of the bowtie icons and the pacman guy on initial load (hopefully that's obvious)</p>
-
-            <p>
-              You might see errors pop up as I'm getting the DB connected now - but cool thing about that... you already have FE logic that
-              will tell your user if the site is experiencing errors, etc.{' '}
-              <i>
-                (there's lots of little things like that you are getting here for 'free', there's probably things implemented here now that
-                you could possibly want in the future including elastic search engine capabiliies, easy support of internationalization,
-                distributed caching, - ad nauseum)
-              </i>
-            </p>
-
-            <p>
-              Its like tapping into a web app development environment with full-stack pre-builts ready to go based on what you need - then
-              we can spend the most time building your actual business logic instead of dealing with configuring tools and misconfigured
-              framework issues, etc.
-            </p>
-
-            <p>
-              Right now your user models are in place - along with registering and logging in - with a bit more time I'll show you how fast
-              I can add front-to-back data modals and the generated admin interfaces, etc.
-            </p>
-            <p>Verification emails might not be hooked up right now though.</p>
-
-            <p>- Bret</p>
+            {
+              // <h2>Welcome Sharon and Sanjay!</h2>
+              // <h3>This is a Spring Boot Java back-end app / with an initial ReactJS FE built with the JHipster tool!</h3>
+              // <br />
+              // <p>
+              //   <b>Please NOTE:</b> I'd update the default styles here to match your current app - OR - We could just wire up your current
+              //   React app as your end-user's client at first.
+              // </p>
+              // <p>Either way it shouldn't be more than a few hours to port all of that over.</p>
+              // <p>I'd also get rid of the bowtie icons and the pacman guy on initial load (hopefully that's obvious)</p>
+              // <p>
+              //   You might see errors pop up as I'm getting the DB connected now - but cool thing about that... you already have FE logic that
+              //   will tell your user if the site is experiencing errors, etc.{' '}
+              //   <i>
+              //     (there's lots of little things like that you are getting here for 'free', there's probably things implemented here now that
+              //     you could possibly want in the future including elastic search engine capabiliies, easy support of internationalization,
+              //     distributed caching, - ad nauseum)
+              //   </i>
+              // </p>
+              // <p>
+              //   Its like tapping into a web app development environment with full-stack pre-builts ready to go based on what you need - then
+              //   we can spend the most time building your actual business logic instead of dealing with configuring tools and misconfigured
+              //   framework issues, etc.
+              // </p>
+              // <p>
+              //   Right now your user models are in place - along with registering and logging in - with a bit more time I'll show you how fast
+              //   I can add front-to-back data modals and the generated admin interfaces, etc.
+              // </p>
+              // <p>Verification emails might not be hooked up right now though.</p>
+              // <p>- Bret</p>
+            }
           </Col>
 
           // <Col md="9">

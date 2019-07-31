@@ -52,8 +52,8 @@ export class App extends React.Component<IAppProps> {
                 <AppRoutes />
               </ErrorBoundary>
             </Card>
-            <Footer />
           </div>
+          <Footer />
         </div>
       </Router>
     );

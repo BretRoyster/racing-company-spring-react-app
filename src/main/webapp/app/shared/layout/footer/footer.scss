@@ -1,3 +1,18 @@
 .footer {
   height: 50px;
+  padding: 2em 0 10em;
+  background: #1c1c1c;
+  text-align: center;
+  line-height: 2em;
+  color: #eee;
+  font-size: 0.8em;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  margin-top: 90px;
+  margin-right: -15px;
+  a {
+    font-size: 12.8px;
+    font-weight: 400;
+    color: #fff;
+    background-color: transparent;
+  }
 }
