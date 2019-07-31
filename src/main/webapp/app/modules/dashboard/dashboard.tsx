@@ -26,15 +26,6 @@ class PriceForm extends React.Component<any, any> {
       opis_price: 0.0,
       last_update: formatted_date
     };
-
-    this.save = this.save.bind(this);
-    this.setGlobalState = this.setGlobalState.bind(this);
-    this.truckstop_callback = this.truckstop_callback.bind(this);
-    this.save_modal = this.save_modal.bind(this);
-    this.onHide = this.onHide.bind(this);
-    this.set_auto_price = this.set_auto_price.bind(this);
-    this.set_manual_price = this.set_manual_price.bind(this);
-    this.refreshData = this.refreshData.bind(this);
   }
 
   componentDidMount() {
@@ -42,7 +33,7 @@ class PriceForm extends React.Component<any, any> {
     setInterval(this.refreshData, 300000);
   }
 
-  refreshData() {
+  refreshData = () => {
     if (this.props.truckstop) {
       // ajaxWrapper('GET', '/api/home/truckstop/' + this.props.truckstop + '/', {}, this.truckstop_callback); // TODO: data calls
     } else {
@@ -56,9 +47,9 @@ class PriceForm extends React.Component<any, any> {
       //   this.truckstop_callback
       // );
     }
-  }
+  };
 
-  truckstop_callback(result) {
+  truckstop_callback = result => {
     if (result.length > 0) {
       const truckstop = result[0]['truckstop'];
       const date = new Date();
@@ -74,30 +65,30 @@ class PriceForm extends React.Component<any, any> {
     } else {
       alert('There is no truckstop that belongs to this account.');
     }
-  }
+  };
 
-  setGlobalState(name, state) {
+  setGlobalState = (name, state) => {
     state['base_price'] = +parseFloat(state['base_price']).toFixed(2);
     this.setState(state);
-  }
+  };
 
-  set_auto_price() {
+  set_auto_price = () => {
     this.setState({ automatic_pricing: true });
-  }
+  };
 
-  set_manual_price() {
+  set_manual_price = () => {
     this.setState({ automatic_pricing: false });
-  }
+  };
 
-  save_modal() {
+  save_modal = () => {
     this.setState({ modal: true });
-  }
+  };
 
-  onHide() {
+  onHide = () => {
     this.setState({ modal: false });
-  }
+  };
 
-  save() {
+  save = () => {
     const data = { automatic_pricing: this.state.automatic_pricing, base_price: this.state.base_price };
 
     let automatic = 'automatic pricing with an additional charge of ' + this.state.base_price + '.';
@@ -120,7 +111,7 @@ class PriceForm extends React.Component<any, any> {
     //   },
     //   console.log
     // );
-  }
+  };
 
   render() {
     const truckstopname_div = (
