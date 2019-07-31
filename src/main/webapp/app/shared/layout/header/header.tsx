@@ -1,13 +1,9 @@
 import './header.scss';
-
 import React from 'react';
-
 import { Navbar, Nav, NavbarToggler, NavbarBrand, Collapse } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { NavLink as Link } from 'react-router-dom';
 import LoadingBar from 'react-redux-loading-bar';
-
 import { Home, Brand } from './header-components';
 import { AdminMenu, EntitiesMenu, AccountMenu } from '../menus';
 
@@ -51,11 +47,14 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
         {isAuthenticated ? (
           <Navbar light expand={isAuthenticated ? 'sm' : ''} fixed="top" className="bg-primary-nav">
             <NavbarToggler aria-label="Menu" onClick={this.toggleMenu} />
+            &nbsp;&nbsp;&nbsp;
             <Brand />
             <Collapse isOpen={this.state.menuOpen} navbar>
               <Nav id="header-tabs" className="ml-auto" navbar>
-                <Home />
-                {isAuthenticated && <EntitiesMenu />}
+                {
+                  // <Home />
+                }
+                {isAuthenticated && isAdmin && <EntitiesMenu />}
                 {isAuthenticated && isAdmin && <AdminMenu showSwagger={isSwaggerEnabled} />}
                 <AccountMenu isAuthenticated={isAuthenticated} />
               </Nav>

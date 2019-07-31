@@ -15,7 +15,7 @@ const accountMenuItemsAuthenticated = (
       Password
     </MenuItem>
     <MenuItem icon="sign-out-alt" to="/logout">
-      Sign out
+      Log Out
     </MenuItem>
   </>
 );
@@ -33,7 +33,7 @@ const accountMenuItems = (
 
 export const AccountMenu = ({ isAuthenticated = false }) => (
   <>
-    <NavDropdown icon="user" name="Account" id="account-menu">
+    <NavDropdown icon="user" name="&nbsp;Account" id="account-menu">
       {isAuthenticated ? accountMenuItemsAuthenticated : accountMenuItems}
     </NavDropdown>
   </>
