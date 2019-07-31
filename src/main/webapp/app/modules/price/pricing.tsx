@@ -15,9 +15,9 @@ const smallFooter = {
 class PriceForm extends React.Component<any, any> {
   constructor(props) {
     super(props);
-    var date = new Date();
-    var formatted_date = date; // TODO: date format
-    // var formatted_date = format_date(date, 'mm/dd/yyyy HH:MM');
+    const date = new Date();
+    const formatted_date = date; // TODO: date format
+    // const formatted_date = format_date(date, 'mm/dd/yyyy HH:MM');
     this.state = {
       automatic_pricing: true,
       base_price: 0.0,
@@ -45,11 +45,11 @@ class PriceForm extends React.Component<any, any> {
 
   refreshData() {
     if (this.props.truckstop) {
-      console.log('Props', this.props.truckstop);
       // ajaxWrapper('GET', '/api/home/truckstop/' + this.props.truckstop + '/', {}, this.truckstop_callback); // TODO: data calls
     } else {
       // ajaxWrapper( // TODO: data calls
       //   'GET',
+      //   '/api/home/truckstop/?owner=' +
       //   '/api/home/truckstop/?owner=' +
       //     // window.cmState.user.id // FIXME: NOO!!!! WHY!?!?! lol
       //     1,
@@ -60,11 +60,10 @@ class PriceForm extends React.Component<any, any> {
   }
 
   truckstop_callback(result) {
-    console.log('Result', result);
     if (result.length > 0) {
-      var truckstop = result[0]['truckstop'];
-      var date = new Date();
-      var formatted_date = date; // TODO: date format
+      const truckstop = result[0]['truckstop'];
+      const date = new Date();
+      const formatted_date = date; // TODO: date format
       // format_date(date, 'mm/dd/yyyy HH:MM');
       if (truckstop['base_price']) {
         truckstop['base_price'] = truckstop['base_price'].toFixed(2);
@@ -80,7 +79,6 @@ class PriceForm extends React.Component<any, any> {
 
   setGlobalState(name, state) {
     state['base_price'] = +parseFloat(state['base_price']).toFixed(2);
-    console.log('Base Price', state['base_price']);
     this.setState(state);
   }
 
@@ -101,11 +99,11 @@ class PriceForm extends React.Component<any, any> {
   }
 
   save() {
-    var data = { automatic_pricing: this.state.automatic_pricing, base_price: this.state.base_price };
+    const data = { automatic_pricing: this.state.automatic_pricing, base_price: this.state.base_price };
 
-    var automatic = 'automatic pricing with an additional charge of ' + this.state.base_price + '.';
-    var partner_price = parseFloat(this.state.opis_price) + parseFloat(this.state.base_price);
-    if (this.state.automatic_pricing == 'false') {
+    let automatic = 'automatic pricing with an additional charge of ' + this.state.base_price + '.';
+    let partner_price = parseFloat(this.state.opis_price) + parseFloat(this.state.base_price);
+    if (this.state.automatic_pricing === 'false') {
       automatic = 'manual pricing with a base price of ' + this.state.base_price + '.';
       partner_price = this.state.base_price;
     }
@@ -126,7 +124,7 @@ class PriceForm extends React.Component<any, any> {
   }
 
   render() {
-    var truckstopname_div = (
+    const truckstopname_div = (
       <div className="truckstopname-div">
         <h4>{this.state.name}</h4>
         <p>
@@ -134,7 +132,7 @@ class PriceForm extends React.Component<any, any> {
         </p>
       </div>
     );
-    var partner_price = (
+    let partner_price = (
       <div className="partnerprice-list">
         <p>Mudflap Rate: </p>
         <div>
@@ -143,9 +141,9 @@ class PriceForm extends React.Component<any, any> {
         </div>
       </div>
     );
-    var price_text = 'Set this as the Mudflap Rate:';
-    var cssclass_update = 'manualselected setpricemode-container';
-    var modal_text = (
+    let price_text = 'Set this as the Mudflap Rate:';
+    let cssclass_update = 'manualselected setpricemode-container';
+    let modal_text = (
       <div className="modalprice-inner">
         <ModalHeader size={2} text={'Are you sure?'} />
         <p>
@@ -156,8 +154,8 @@ class PriceForm extends React.Component<any, any> {
         <Button type="cancel-button" text="CANCEL" onClick={this.onHide} />
       </div>
     );
-    var opis_price = null;
-    if (this.state.automatic_pricing == 'true' || this.state.automatic_pricing == true) {
+    let opis_price = null;
+    if (this.state.automatic_pricing === 'true' || this.state.automatic_pricing === true) {
       opis_price = (
         <div className="opisprice-list">
           <p>Rack + Taxes:</p>
@@ -167,7 +165,7 @@ class PriceForm extends React.Component<any, any> {
           </div>
         </div>
       );
-      var partner_price = (
+      partner_price = (
         <div className="partnerprice-list">
           <p>Mudflap Rate: </p>
           <div>
@@ -177,8 +175,8 @@ class PriceForm extends React.Component<any, any> {
         </div>
       );
       price_text = 'The Mudflap Rate is cost plus this markup:';
-      var cssclass_update = 'autoSelected setpricemode-container';
-      var modal_text = (
+      cssclass_update = 'autoSelected setpricemode-container';
+      modal_text = (
         <div className="modalprice-inner">
           <ModalHeader size={2} text={'Are you sure?'} />
           <p>
@@ -191,12 +189,12 @@ class PriceForm extends React.Component<any, any> {
       );
     }
 
-    var saved = null;
+    let saved = null;
     if (this.state.saved) {
       saved = <Alert text="Saved" type="success" />;
     }
 
-    var content = (
+    const content = (
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div id="ported-styles" className="setpricemaster-div">
           {truckstopname_div}
@@ -221,7 +219,7 @@ class PriceForm extends React.Component<any, any> {
                     key={this.state.automatic_pricing}
                     defaults={this.state}
                     setGlobalState={this.setGlobalState}
-                    autoSetGlobalState={true}
+                    autoSetGlobalState
                     globalStateName={'truckstop_form'}
                   >
                     <div className="pricechange-dollar">$</div>
