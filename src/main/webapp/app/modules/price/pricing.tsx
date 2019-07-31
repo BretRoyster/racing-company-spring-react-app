@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
-// import { Wrapper, Button, Header, EmptyModal, FormWithChildren, TextInput, NumberInput, Select, Alert } from './library';
-// import { ajaxWrapper, format_date } from './functions';
+import { Alert, Modal, ModalHeader, Button } from 'reactstrap';
+import { AvForm, AvField } from 'availity-reactstrap-validation';
+
+import './pricing.scss';
 
 const smallFooter = {
   display: 'block',
@@ -17,7 +19,7 @@ class PriceForm extends React.Component<any, any> {
     var formatted_date = date; // TODO: date format
     // var formatted_date = format_date(date, 'mm/dd/yyyy HH:MM');
     this.state = {
-      automatic_pricing: false,
+      automatic_pricing: true,
       base_price: 0.0,
       modal: false,
       saved: false,
@@ -145,7 +147,7 @@ class PriceForm extends React.Component<any, any> {
     var cssclass_update = 'manualselected setpricemode-container';
     var modal_text = (
       <div className="modalprice-inner">
-        <Header size={2} text={'Are you sure?'} />
+        <ModalHeader size={2} text={'Are you sure?'} />
         <p>
           The partner price will be set to ${parseFloat(this.state.base_price).toFixed(2)}. To change this, come back anytime to the
           dashboard and enter a new price, or save time by opting for Automatic Pricing
@@ -178,7 +180,7 @@ class PriceForm extends React.Component<any, any> {
       var cssclass_update = 'autoSelected setpricemode-container';
       var modal_text = (
         <div className="modalprice-inner">
-          <Header size={2} text={'Are you sure?'} />
+          <ModalHeader size={2} text={'Are you sure?'} />
           <p>
             The partner price will be set to ${this.state.base_price} + Your OPIS Price. To change this, come back anytime to the dashboard
             and enter a new price, or manually control your partner price with Manual Pricing
@@ -195,54 +197,81 @@ class PriceForm extends React.Component<any, any> {
     }
 
     var content = (
-      <div className="setpricemaster-div">
-        {truckstopname_div}
-        <div className="setprice-container">
-          <div className="setprice-inner">
-            <h3>Set Mudflap Rate</h3>
-            <div className={cssclass_update}>
-              <div className="setprice-auto" onClick={this.set_auto_price}>
-                <span>auto</span>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div id="ported-styles" className="setpricemaster-div">
+          {truckstopname_div}
+          <div className="setprice-container">
+            <div className="setprice-inner">
+              <h3>Set Mudflap Rate</h3>
+              <div className={cssclass_update}>
+                <div className="setprice-auto" onClick={this.set_auto_price}>
+                  <span>auto</span>
+                </div>
+                {
+                  // <div className="setprice-manual" onClick={this.set_manual_price}>
+                  //   <span>manual</span>
+                  // </div>
+                }
               </div>
-              <div className="setprice-manual" onClick={this.set_manual_price}>
-                <span>manual</span>
+              <div className="pricechange-detail">
+                <div className="pricechange-desc">{price_text}</div>
+                <div className="pricechange-number">
+                  <AvForm
+                    style={{ display: 'flex', justifyContent: 'center' }}
+                    key={this.state.automatic_pricing}
+                    defaults={this.state}
+                    setGlobalState={this.setGlobalState}
+                    autoSetGlobalState={true}
+                    globalStateName={'truckstop_form'}
+                  >
+                    <div className="pricechange-dollar">$</div>
+                    <AvField
+                      id="truck-stop-basePrice"
+                      type="number"
+                      className="form-control"
+                      name="base_price"
+                      step="0.01"
+                      validate={{
+                        required: { value: true, errorMessage: 'This field is required.' },
+                        min: { value: 0, errorMessage: 'This field should be at least 0.' },
+                        number: { value: true, errorMessage: 'This field should be a number.' }
+                      }}
+                    />
+                    {
+                      // <NumberInput name="base_price" step={0.01} />
+                    }
+                  </AvForm>
+                </div>
               </div>
-            </div>
-            <div className="pricechange-detail">
-              <div className="pricechange-desc">{price_text}</div>
-              <div className="pricechange-number">
-                <div className="pricechange-dollar">$</div>
-                <FormWithChildren
-                  key={this.state.automatic_pricing}
-                  defaults={this.state}
-                  setGlobalState={this.setGlobalState}
-                  autoSetGlobalState={true}
-                  globalStateName={'truckstop_form'}
-                >
-                  <NumberInput name="base_price" step={0.01} />
-                </FormWithChildren>
+              <Button color="primary" className="btn-pricechange-save" onClick={this.save_modal}>
+                Save
+              </Button>
+              {
+                // <Button type="pricechange-save" onClick={this.save_modal} text="Save" />
+              }
+              {saved}
+              <div className="pricelist-ctr">
+                {opis_price}
+                {partner_price}
               </div>
-            </div>
-            <Button type="pricechange-save" onClick={this.save_modal} text="Save" />
-            {saved}
-            <div className="pricelist-ctr">
-              {opis_price}
-              {partner_price}
-            </div>
 
-            <EmptyModal onHide={this.onHide} show={this.state.modal}>
-              {modal_text}
-            </EmptyModal>
+              <Modal onHide={this.onHide} show={this.state.modal}>
+                {modal_text}
+              </Modal>
+            </div>
+          </div>
+          {
+            // style={smallFooter}
+          }
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: 15, fontSize: 12.8, fontWeight: 400 }}>
+            <span>{`Data Refreshed As Of: ${this.state.last_update}`}</span>
           </div>
         </div>
-        {
-          // style={smallFooter}
-        }
-        <small>Data Refreshed As Of: {this.state.last_update}</small>
       </div>
     );
 
-    return <Wrapper content={content} loaded={this.state.loaded} />;
+    // return <Wrapper content={content} loaded={this.state.loaded} />;
+    return content;
   }
 }
 

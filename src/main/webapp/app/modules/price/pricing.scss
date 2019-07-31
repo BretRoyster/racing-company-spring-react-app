@@ -1,0 +1,669 @@
+/* Ported Styles */
+
+#ported-styles {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  }
+  .mudflapTopNav {
+    justify-content: center;
+  }
+  .mudflapTopNav img.logo {
+    max-width: 200px;
+  }
+  .navbar-wrap {
+    background: #f5f5f5;
+  }
+  .navbar-wrap#login-page,
+  .navbar-wrap#passwordreset-page,
+  .navbar-wrap#invitepswd-page {
+    background: #fff;
+  }
+  .navbar-wrap#login-page .mudflapTopNav {
+    padding-top: 20px;
+  }
+  .navbar-wrap#login-page .mudflapTopNav img.logo,
+  .navbar-wrap#passwordreset-page .mudflapTopNav img.logo,
+  .navbar-wrap#invitepswd-page .mudflapTopNav img.logo {
+    max-width: 300px;
+    margin-top: 3em;
+  }
+  .navbar-nav .nav-link {
+    cursor: pointer;
+  }
+  .container-fluid > div {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .container-fluid > .truckstop-contaniner,
+  .container-fluid > .userlist-container {
+    padding: 1em;
+  }
+
+  .container-fluid > div.container-fluid {
+    width: 100%;
+    min-height: 70vh;
+    max-width: 100%;
+  }
+  .container-fluid > .login-form {
+    width: 100%;
+    height: 78vh;
+    max-width: 100%;
+    background: #fff;
+  }
+  .login-form .alert-danger {
+    max-width: 400px;
+    padding: 10px;
+  }
+  div.login-form .form-group {
+    display: grid;
+    grid-auto-columns: 100px 1fr;
+    align-items: center;
+  }
+  div.login-form .form-group label {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  div.login-form .form-group input {
+    grid-column: 2/2;
+  }
+  .modal-content .addtruck-form {
+    padding: 1rem;
+  }
+  .addtruck-form h4 {
+    padding-bottom: 0.7em;
+  }
+  .addtruck-form .form-group {
+    display: grid;
+    grid-auto-columns: 120px 1fr;
+  }
+  .addtruck-form .form-group label {
+    grid-column: 1/2;
+    font-size: 0.9em;
+  }
+  .addtruck-form .form-group input {
+    grid-column: 2/2;
+    width: 100%;
+  }
+
+  .userlist-container .card {
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: #f5f5f5;
+  }
+  .card-heaeder {
+    padding-bottom: 1em;
+  }
+  .card-heaeder h3,
+  .card-heaeder button {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .card-heaeder button {
+    float: right;
+    font-size: 0.9em;
+  }
+  .truckstop-details.card {
+    background: #f5f5f5;
+    padding: 1em;
+    margin: 0.5em 0;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  .truckstop-details .form {
+    font-size: 0.9em;
+    padding-bottom: 5px;
+  }
+  .truckstop-details h4 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #3096ed;
+  }
+  .truckstop-details .truckstopName {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .truckstop-details > p {
+    font-size: 0.8em;
+    padding-top: 5px;
+  }
+  .truckstop-details .btn {
+    padding: 0.3em 1em;
+    line-height: normal;
+    font-size: 0.9em;
+  }
+  .truckstop-details .form-group label,
+  .truckstop-details .form-group input.form-control {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .truckstop-details .alert-success {
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    line-height: normal;
+  }
+  .small-details {
+    display: block;
+    padding: 0.5em 1em;
+    background: #ddd;
+    margin: 1em -1em -1em;
+  }
+  .small-details small {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .truckstop-created {
+    padding-right: 1em;
+    margin-right: 1em;
+    border-right: 1px solid #666;
+  }
+  .truckstop-details .form > div {
+    display: inline-block;
+    width: auto;
+    margin-right: 1em;
+  }
+  .truckstop-details .form-group {
+    margin-bottom: 0.5em;
+  }
+  .truckstop-details .form > div .form-control {
+    width: 100px;
+  }
+  .truckstop-details .form-group label {
+    padding: 0.3em 1em 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .truckstop-details h2 {
+    padding-bottom: 0.5em;
+  }
+  .truckstoppartner-price > div,
+  .truckstoppartner-price > p {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+  }
+  .truckstoppartner-price > p {
+    width: 40%;
+    text-align: right;
+    font-weight: bold;
+    margin: 0.5em 0 0 0;
+  }
+  .userlist-row {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+  }
+  .userlist-row > div {
+    padding: 0.4em 0;
+  }
+  .userlist-row > button {
+    grid-column-start: col-start 2;
+  }
+  .pswd-inner {
+    max-width: 450px;
+    width: 100%;
+    max-height: 300px;
+    justify-self: center;
+    margin-top: 3rem;
+  }
+  div.login-form .form,
+  .pswd-inner > .form {
+    background: #eee;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px;
+    border: 1px solid #ccc;
+    padding: 2rem;
+  }
+  .login-inner {
+    max-width: 30em;
+    margin: 3em auto 0;
+    position: relative;
+  }
+  .login-inner .alert {
+    position: absolute;
+    top: 10px;
+    right: 1em;
+    background: transparent;
+    border: none;
+    color: #c00;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  div.login-form > .form {
+    max-width: 450px;
+    width: 100%;
+    max-height: 300px;
+    align-self: center;
+    justify-self: center;
+    margin: 3em auto 0.5em auto;
+    text-align: center;
+  }
+  .welcomemessage-ctr {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  small.form-text {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-size: 1em;
+    text-align: center;
+  }
+  .login-form button {
+    padding: 0.5rem 4rem;
+  }
+  .topnavbar-list,
+  .topnavbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .topnavbar-list {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-bottom: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  }
+  .pagetitlenav-name {
+    padding: 0.5rem 1rem;
+    border-right: 1px solid #ddd;
+    margin-right: 1em;
+  }
+  .pagetitlenav-name {
+    font-weight: bolder;
+  }
+  .topnavbar-menu > li {
+    padding: 0 1em;
+  }
+  .navbar-nav a.nav-link {
+    color: #007bff;
+  }
+  .topnavbar-list#login-page,
+  .topnavbar-list#passwordreset-page,
+  .topnavbar-list#invitepswd-page {
+    display: none;
+  }
+  .btn-invite {
+    background: #3096ed;
+    color: #fff;
+  }
+  .btn-edit {
+    background: #38cfc1;
+    color: #fff;
+  }
+  .btn-save {
+    background: #2fa373;
+    color: #fff;
+  }
+  .btn-delete {
+    background: #c00;
+    color: #fff;
+    float: right;
+  }
+  .btn {
+    border-radius: 10px;
+  }
+  .container-fluid > div.setpricemaster-div {
+    max-width: 35em;
+    margin-bottom: 10em;
+  }
+  .container-fluid div.setprice-container,
+  .container-fluid > div.profile-container,
+  .container-fluid > div.password-reset {
+    padding: 1.5em;
+    background: #f5f5f5;
+    margin-top: 2em;
+    max-width: 35em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .container-fluid div.setprice-container {
+    margin-top: 1em;
+  }
+  .container-fluid div.setprice-container h3,
+  .container-fluid div.profile-container h3 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+  }
+  .truckstopname-div {
+    padding: 1em 0 0.1em 1em;
+  }
+  .truckstopname-div h4 {
+    font-weight: bold;
+    margin-bottom: 0.1em;
+  }
+  .truckstopname-div p {
+    color: #666;
+    font-size: 0.9em;
+  }
+  .setprice-inner {
+    text-align: center;
+  }
+  .setpricemode-container {
+    margin: 0 auto 2em;
+    border-radius: 100px;
+    background: #ddd;
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  .setpricemode-container > div {
+    display: inline-block;
+    padding: 1em 1em;
+    text-transform: uppercase;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .setprice-auto {
+    border-radius: 100px;
+  }
+  .setprice-manual {
+    border-radius: 100px;
+  }
+  .autoSelected .setprice-auto {
+    background: #3096ed;
+    color: #fff;
+    font-weight: bold;
+  }
+  .manualselected .setprice-manual {
+    background: #3096ed;
+    color: #fff;
+    font-weight: bold;
+  }
+  .pricechange-detail {
+    text-align: center;
+  }
+  .pricechange-desc {
+    padding-bottom: 0.5em;
+  }
+  .pricechange-number > div {
+    display: inline-block;
+  }
+  .pricechange-number .pricechange-dollar {
+    font-size: 1.5em;
+    padding-right: 5px;
+  }
+  .pricechange-number .form label {
+    display: none;
+  }
+  .pricechange-number .form {
+    width: 150px;
+  }
+  .pricechange-number .form input {
+    font-size: 2em;
+  }
+  .btn-pricechange-save {
+    background: #28a745;
+    color: #fff;
+    width: 200px;
+    padding: 0.8em;
+    font-weight: bold;
+    margin: 10px auto 0;
+    text-transform: uppercase;
+  }
+  .savebutton-div {
+    text-align: center;
+  }
+  .savebutton-div .alert-success,
+  .setprice-container .alert-success {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .profile-container .form-group {
+    display: grid;
+    grid-auto-columns: 100px auto;
+  }
+  .profile-container .form-group input {
+    grid-column: 2/2;
+  }
+  .modalprice-inner {
+    padding: 1.5em;
+    text-align: left;
+    font-size: 0.9em;
+  }
+  .modalprice-inner .btn-pricechange-save {
+    padding: 0.3em 1em;
+    line-height: normal;
+    font-weight: normal;
+  }
+  .modalprice-inner h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  .modalprice-inner .btn-pricechange-save {
+    width: auto;
+  }
+  button.btn.btn-cancel-button {
+    float: right;
+    margin: 7px 0 0;
+    font-size: 1em;
+    background: transparent;
+  }
+  .pricelist-ctr {
+    background: #fff;
+    margin: 2em -1.5em -1.5em;
+    border-top: 1px solid #aaa;
+  }
+  .pricelist-ctr > div {
+    display: inline-block;
+    width: 50%;
+    padding: 1em;
+  }
+  .partnerprice-list {
+    color: #2ba979;
+    font-weight: bold;
+  }
+  .pricelist-ctr > div > p {
+    margin-bottom: 0;
+    font-size: 0.9em;
+    text-transform: uppercase;
+  }
+  .opisprice-list {
+    color: #999;
+  }
+  .pricelist-ctr > div > div {
+    font-size: 1.5em;
+  }
+  .pricelist-ctr > div > div span,
+  .pricelist-ctr > div > div small {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+  .pricelist-ctr > div > div span {
+    padding-right: 5px;
+  }
+  .opisprice-list {
+    border-right: 1px solid #ccc;
+  }
+
+  #footer {
+    padding: 2em 0 10em;
+    background: #1c1c1c;
+    text-align: center;
+    line-height: 2em;
+    color: #eee;
+    font-size: 0.8em;
+    margin-top: 90px;
+  }
+  #footer.login-page,
+  #footer.invitepswd-page {
+    margin-top: 0;
+  }
+  #footer a {
+    color: #fff;
+  }
+  .container-fluid > div.password-reset {
+    max-width: 450px;
+  }
+  div.password-reset h4 {
+    padding-bottom: 1.5em;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+  div.password-reset .form-group {
+    display: grid;
+    grid-auto-columns: 70px 1fr;
+  }
+  div.password-reset .form-group input {
+    grid-column: 2/2;
+    max-width: 300px;
+  }
+  .passwordSetPage {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .passwordSetPage .password-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .topnavbar-list#dashboard-page .nav-item.Price a,
+  .topnavbar-list#settings-page .nav-item.Profile a {
+    color: #28a745;
+    font-weight: bold;
+  }
+  .profile-container .form-group label {
+    padding: 0.5em 0;
+  }
+  .inviteLinkModal {
+    margin: 10px;
+  }
+  .inviteLinkModal h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 1024px) {
+    nav.mudflapTopNav {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 415px) {
+    .profile-container .form-group {
+      grid-auto-columns: 75px auto;
+    }
+    .container-fluid > .login-form {
+      height: 40vh;
+    }
+    .container-fluid > div.container-fluid {
+      min-height: 50vh;
+    }
+    small.form-text {
+      padding-top: 15px;
+      margin-top: 0 !important;
+      text-align: center;
+    }
+    .topnavbar-list {
+      display: block;
+    }
+    .pagetitlenav-name {
+      margin-right: 0;
+      text-align: center;
+    }
+    div.login-form > .form,
+    small.form-text {
+      max-width: 90%;
+      margin-top: 2em;
+    }
+    .container-fluid > div {
+      width: 95%;
+    }
+    .container-fluid > .truckstop-contaniner,
+    .container-fluid > .userlist-container {
+      padding: 1em;
+    }
+    .card-heaeder h3,
+    .card-heaeder button {
+      width: 100%;
+    }
+    .card-heaeder h3 {
+      text-align: center;
+    }
+    .truckstop-details .button-row .btn {
+      float: none;
+      width: 48%;
+      margin-top: 5px;
+    }
+    .card-heaeder button {
+      float: none;
+    }
+    .container-fluid div.setprice-container {
+      padding: 1em;
+    }
+    .navbar-wrap#login-page .mudflapTopNav img.logo,
+    .navbar-wrap#invitepswd-page .mudflapTopNav img.logo {
+      max-width: 250px;
+    }
+    .pricelist-ctr {
+      margin: 1.5em -1em -1em;
+    }
+    .container-fluid div.setprice-container h3 {
+      text-align: center;
+    }
+    .modalprice-inner {
+      padding: 0.8em;
+    }
+    .welcomemessage-ctr {
+      font-size: 0.9em;
+    }
+    div.login-form .form,
+    .pswd-inner > .form {
+      padding: 1em;
+    }
+    div.login-form .form-group {
+      display: block;
+    }
+    div.login-form .form-group label {
+      margin-bottom: 0.5em;
+      text-align: left;
+      width: 100%;
+      font-size: 0.9em;
+    }
+  }
+}
+
+/* Edits of ported styles */
+
+.pricechange-number input {
+  font-size: 2em;
+  max-width: 186px;
+}
+
+.pricechange-dollar {
+  margin-top: 16px;
+}
+
+.setprice-inner h3 {
+  font-size: 20.8px;
+  font-weight: 500;
+}
+
+.setpricemaster-div {
+  width: 560px;
+  max-width: 35em;
+  margin-bottom: 10em;
+}
+
+.setprice-container {
+  padding: 1.5em;
+  background: #f5f5f5;
+  margin-top: 2em;
+  max-width: 35em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
