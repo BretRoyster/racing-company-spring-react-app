@@ -33,9 +33,13 @@ export class App extends React.Component<IAppProps> {
 
   render() {
     const paddingTop = '60px';
+    // Workaround for styles ported from previous webapp
+    // - Issue: End-user dashboard is shifted left about 90px in mobile, which leave an ugly empty white bar down the right side
+    // - This is only expected if the end-user (ie. not admin) is logged in
+    const marginRight = this.props.isAdmin ? '0px' : '-90px';
     return (
       <Router basename={baseHref}>
-        <div className="app-container" style={{ paddingTop }}>
+        <div className="app-container" style={{ paddingTop, marginRight }}>
           <ToastContainer position={toast.POSITION.TOP_LEFT} className="toastify-container" toastClassName="toastify-toast" />
           <ErrorBoundary>
             <Header
