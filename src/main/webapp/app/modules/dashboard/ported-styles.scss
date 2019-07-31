@@ -1,6 +1,7 @@
 /* Ported Styles */
 
-#ported-styles {
+#ported-styles,
+.navbar-wrap-container {
   body {
     margin: 0;
     padding: 0;
@@ -632,38 +633,4 @@
       font-size: 0.9em;
     }
   }
-}
-
-/* Edits of ported styles */
-
-.pricechange-number input {
-  font-size: 2em;
-  max-width: 186px;
-}
-
-.pricechange-dollar {
-  margin-top: 16px;
-}
-
-.setprice-inner h3 {
-  font-size: 20.8px;
-  font-weight: 500;
-}
-
-.setpricemaster-div {
-  width: 560px;
-  max-width: 35em;
-  margin-bottom: 10em;
-}
-
-.setprice-container {
-  padding: 1.5em;
-  background: #f5f5f5;
-  margin-top: 2em;
-  max-width: 35em;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid #ccc;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
 }
