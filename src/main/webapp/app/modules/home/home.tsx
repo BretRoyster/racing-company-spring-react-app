@@ -8,6 +8,8 @@ import { Row, Col, Alert } from 'reactstrap';
 
 import { IRootState } from 'app/shared/reducers';
 import { getSession } from 'app/shared/reducers/authentication';
+import { hasAnyAuthority } from 'app/shared/auth/private-route';
+import { AUTHORITIES } from 'app/config/constants';
 
 export interface IHomeProp extends StateProps, DispatchProps {}
 
@@ -21,7 +23,10 @@ export class Home extends React.Component<IHomeProp> {
     if (!isAuthenticated) {
       return <Redirect to={{ pathname: '/login' }} />;
     }
-    return <Redirect to={{ pathname: '/entity/truck-stop' }} />;
+    if (hasAnyAuthority(this.props.account.authorities, [AUTHORITIES.ADMIN])) {
+      return <Redirect to={{ pathname: '/entity/truck-stop' }} />;
+    }
+    return <Redirect to={{ pathname: '/dashboard' }} />;
     //     return (
     //       <Row>
     //         {
