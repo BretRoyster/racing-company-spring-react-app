@@ -1,7 +1,7 @@
 import './home.scss';
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
@@ -17,7 +17,10 @@ export class Home extends React.Component<IHomeProp> {
   }
 
   render() {
-    const { account } = this.props;
+    const { account, isAuthenticated } = this.props;
+    if (!isAuthenticated) {
+      return <Redirect to={{ pathname: '/login' }} />;
+    }
     return (
       <Row>
         {

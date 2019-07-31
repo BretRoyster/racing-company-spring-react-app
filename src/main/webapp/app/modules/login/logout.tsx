@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link, Redirect } from 'react-router-dom';
 
 import { IRootState } from 'app/shared/reducers';
 import { logout } from 'app/shared/reducers/authentication';
@@ -24,11 +25,12 @@ export class Logout extends React.Component<ILogoutProps> {
           : logoutUrl + '?id_token_hint=' + this.props.idToken + '&post_logout_redirect_uri=' + window.location.origin;
     }
 
-    return (
-      <div className="p-5">
-        <h4>Logged out successfully!</h4>
-      </div>
-    );
+    return <Redirect to={{ pathname: '/login' }} />;
+    // return (
+    //   <div className="p-5">
+    //     <h4>Logged out successfully!</h4>
+    //   </div>
+    // );
   }
 }
 
