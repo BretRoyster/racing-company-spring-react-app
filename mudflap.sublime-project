@@ -6,18 +6,12 @@
             [
                 "node_modules",
                 "target",
-                // "dev-site",
-                "vendor",
-                "cart-test-site",
-                "tshirt2",
-                "tshirt3",
-                "tshirt4"
             ],
             "file_exclude_patterns":
             [
                 // "*.log"
             ],
-			"name": "Shirt Design Project",
+			"name": "Mudflap Truck Stop Project",
 			"path": "."
 		}
     ]
