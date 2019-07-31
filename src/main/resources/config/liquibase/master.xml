@@ -22,5 +22,6 @@
 
 <!-- MANUALLY ADD DIFFs HERE -->
     <include file="config/liquibase/changelog/20190730224004_init_liquibase_diff_after_new_app_generation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190731002458_refactor_entity_truckStop.xml" relativeToChangelogFile="false"/>
 
 </databaseChangeLog>

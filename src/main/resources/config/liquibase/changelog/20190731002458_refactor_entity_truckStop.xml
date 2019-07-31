@@ -1,0 +1,60 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="bret (generated)" id="1564532727647-4">
+        <addColumn tableName="truck_stop">
+            <column name="base_price" type="float4">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564532727647-5">
+        <addColumn tableName="truck_stop">
+            <column name="city" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564532727647-6">
+        <addColumn tableName="truck_stop">
+            <column name="mudflap_code" type="text"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564532727647-7">
+        <addColumn tableName="truck_stop">
+            <column name="opis_price" type="float4">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564532727647-8">
+        <addColumn tableName="truck_stop">
+            <column name="owner_id" type="int8">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564532727647-9">
+        <addColumn tableName="truck_stop">
+            <column name="state" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564532727647-10">
+        <addColumn tableName="truck_stop">
+            <column name="street" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564532727647-11">
+        <addColumn tableName="truck_stop">
+            <column name="zip_code" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564532727647-12">
+        <addForeignKeyConstraint baseColumnNames="owner_id" baseTableName="truck_stop" constraintName="FK2122g1lekjvbcmmgcclsegkil" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="jhi_user" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

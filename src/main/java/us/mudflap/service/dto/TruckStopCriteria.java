@@ -28,12 +28,36 @@ public class TruckStopCriteria implements Serializable, Criteria {
 
     private StringFilter name;
 
+    private FloatFilter basePrice;
+
+    private FloatFilter opisPrice;
+
+    private StringFilter street;
+
+    private StringFilter city;
+
+    private StringFilter state;
+
+    private StringFilter zipCode;
+
+    private StringFilter mudflapCode;
+
+    private LongFilter ownerId;
+
     public TruckStopCriteria(){
     }
 
     public TruckStopCriteria(TruckStopCriteria other){
         this.id = other.id == null ? null : other.id.copy();
         this.name = other.name == null ? null : other.name.copy();
+        this.basePrice = other.basePrice == null ? null : other.basePrice.copy();
+        this.opisPrice = other.opisPrice == null ? null : other.opisPrice.copy();
+        this.street = other.street == null ? null : other.street.copy();
+        this.city = other.city == null ? null : other.city.copy();
+        this.state = other.state == null ? null : other.state.copy();
+        this.zipCode = other.zipCode == null ? null : other.zipCode.copy();
+        this.mudflapCode = other.mudflapCode == null ? null : other.mudflapCode.copy();
+        this.ownerId = other.ownerId == null ? null : other.ownerId.copy();
     }
 
     @Override
@@ -57,6 +81,70 @@ public class TruckStopCriteria implements Serializable, Criteria {
         this.name = name;
     }
 
+    public FloatFilter getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(FloatFilter basePrice) {
+        this.basePrice = basePrice;
+    }
+
+    public FloatFilter getOpisPrice() {
+        return opisPrice;
+    }
+
+    public void setOpisPrice(FloatFilter opisPrice) {
+        this.opisPrice = opisPrice;
+    }
+
+    public StringFilter getStreet() {
+        return street;
+    }
+
+    public void setStreet(StringFilter street) {
+        this.street = street;
+    }
+
+    public StringFilter getCity() {
+        return city;
+    }
+
+    public void setCity(StringFilter city) {
+        this.city = city;
+    }
+
+    public StringFilter getState() {
+        return state;
+    }
+
+    public void setState(StringFilter state) {
+        this.state = state;
+    }
+
+    public StringFilter getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(StringFilter zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    public StringFilter getMudflapCode() {
+        return mudflapCode;
+    }
+
+    public void setMudflapCode(StringFilter mudflapCode) {
+        this.mudflapCode = mudflapCode;
+    }
+
+    public LongFilter getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(LongFilter ownerId) {
+        this.ownerId = ownerId;
+    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -69,14 +157,30 @@ public class TruckStopCriteria implements Serializable, Criteria {
         final TruckStopCriteria that = (TruckStopCriteria) o;
         return
             Objects.equals(id, that.id) &&
-            Objects.equals(name, that.name);
+            Objects.equals(name, that.name) &&
+            Objects.equals(basePrice, that.basePrice) &&
+            Objects.equals(opisPrice, that.opisPrice) &&
+            Objects.equals(street, that.street) &&
+            Objects.equals(city, that.city) &&
+            Objects.equals(state, that.state) &&
+            Objects.equals(zipCode, that.zipCode) &&
+            Objects.equals(mudflapCode, that.mudflapCode) &&
+            Objects.equals(ownerId, that.ownerId);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(
         id,
-        name
+        name,
+        basePrice,
+        opisPrice,
+        street,
+        city,
+        state,
+        zipCode,
+        mudflapCode,
+        ownerId
         );
     }
 
@@ -85,6 +189,14 @@ public class TruckStopCriteria implements Serializable, Criteria {
         return "TruckStopCriteria{" +
                 (id != null ? "id=" + id + ", " : "") +
                 (name != null ? "name=" + name + ", " : "") +
+                (basePrice != null ? "basePrice=" + basePrice + ", " : "") +
+                (opisPrice != null ? "opisPrice=" + opisPrice + ", " : "") +
+                (street != null ? "street=" + street + ", " : "") +
+                (city != null ? "city=" + city + ", " : "") +
+                (state != null ? "state=" + state + ", " : "") +
+                (zipCode != null ? "zipCode=" + zipCode + ", " : "") +
+                (mudflapCode != null ? "mudflapCode=" + mudflapCode + ", " : "") +
+                (ownerId != null ? "ownerId=" + ownerId + ", " : "") +
             "}";
     }
 

@@ -112,6 +112,30 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
                   <th className="hand" onClick={this.sort('name')}>
                     Name <FontAwesomeIcon icon="sort" />
                   </th>
+                  <th className="hand" onClick={this.sort('basePrice')}>
+                    Base Price <FontAwesomeIcon icon="sort" />
+                  </th>
+                  <th className="hand" onClick={this.sort('opisPrice')}>
+                    Opis Price <FontAwesomeIcon icon="sort" />
+                  </th>
+                  <th className="hand" onClick={this.sort('street')}>
+                    Street <FontAwesomeIcon icon="sort" />
+                  </th>
+                  <th className="hand" onClick={this.sort('city')}>
+                    City <FontAwesomeIcon icon="sort" />
+                  </th>
+                  <th className="hand" onClick={this.sort('state')}>
+                    State <FontAwesomeIcon icon="sort" />
+                  </th>
+                  <th className="hand" onClick={this.sort('zipCode')}>
+                    Zip Code <FontAwesomeIcon icon="sort" />
+                  </th>
+                  <th className="hand" onClick={this.sort('mudflapCode')}>
+                    Mudflap Code <FontAwesomeIcon icon="sort" />
+                  </th>
+                  <th>
+                    Owner <FontAwesomeIcon icon="sort" />
+                  </th>
                   <th />
                 </tr>
               </thead>
@@ -124,6 +148,14 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
                       </Button>
                     </td>
                     <td>{truckStop.name}</td>
+                    <td>{truckStop.basePrice}</td>
+                    <td>{truckStop.opisPrice}</td>
+                    <td>{truckStop.street}</td>
+                    <td>{truckStop.city}</td>
+                    <td>{truckStop.state}</td>
+                    <td>{truckStop.zipCode}</td>
+                    <td>{truckStop.mudflapCode}</td>
+                    <td>{truckStop.ownerLogin ? truckStop.ownerLogin : ''}</td>
                     <td className="text-right">
                       <div className="btn-group flex-btn-group-container">
                         <Button tag={Link} to={`${match.url}/${truckStop.id}`} color="info" size="sm">

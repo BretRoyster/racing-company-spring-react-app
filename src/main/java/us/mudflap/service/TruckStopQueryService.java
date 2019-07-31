@@ -98,6 +98,31 @@ public class TruckStopQueryService extends QueryService<TruckStop> {
             if (criteria.getName() != null) {
                 specification = specification.and(buildStringSpecification(criteria.getName(), TruckStop_.name));
             }
+            if (criteria.getBasePrice() != null) {
+                specification = specification.and(buildRangeSpecification(criteria.getBasePrice(), TruckStop_.basePrice));
+            }
+            if (criteria.getOpisPrice() != null) {
+                specification = specification.and(buildRangeSpecification(criteria.getOpisPrice(), TruckStop_.opisPrice));
+            }
+            if (criteria.getStreet() != null) {
+                specification = specification.and(buildStringSpecification(criteria.getStreet(), TruckStop_.street));
+            }
+            if (criteria.getCity() != null) {
+                specification = specification.and(buildStringSpecification(criteria.getCity(), TruckStop_.city));
+            }
+            if (criteria.getState() != null) {
+                specification = specification.and(buildStringSpecification(criteria.getState(), TruckStop_.state));
+            }
+            if (criteria.getZipCode() != null) {
+                specification = specification.and(buildStringSpecification(criteria.getZipCode(), TruckStop_.zipCode));
+            }
+            if (criteria.getMudflapCode() != null) {
+                specification = specification.and(buildStringSpecification(criteria.getMudflapCode(), TruckStop_.mudflapCode));
+            }
+            if (criteria.getOwnerId() != null) {
+                specification = specification.and(buildSpecification(criteria.getOwnerId(),
+                    root -> root.join(TruckStop_.owner, JoinType.LEFT).get(User_.id)));
+            }
         }
         return specification;
     }

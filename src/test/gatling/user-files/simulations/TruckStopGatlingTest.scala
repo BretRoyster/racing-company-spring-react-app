@@ -73,6 +73,13 @@ class TruckStopGatlingTest extends Simulation {
             .body(StringBody("""{
                 "id":null
                 , "name":"SAMPLE_TEXT"
+                , "basePrice":null
+                , "opisPrice":null
+                , "street":"SAMPLE_TEXT"
+                , "city":"SAMPLE_TEXT"
+                , "state":"SAMPLE_TEXT"
+                , "zipCode":"SAMPLE_TEXT"
+                , "mudflapCode":"SAMPLE_TEXT"
                 }""")).asJson
             .check(status.is(201))
             .check(headerRegex("Location", "(.*)").saveAs("new_truckStop_url"))).exitHereIfFailed

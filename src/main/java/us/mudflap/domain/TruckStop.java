@@ -1,4 +1,5 @@
 package us.mudflap.domain;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
@@ -26,6 +27,40 @@ public class TruckStop implements Serializable {
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 
+    @NotNull
+    @DecimalMin(value = "0")
+    @Column(name = "base_price", nullable = false)
+    private Float basePrice;
+
+    @NotNull
+    @DecimalMin(value = "0")
+    @Column(name = "opis_price", nullable = false)
+    private Float opisPrice;
+
+    @NotNull
+    @Column(name = "street", nullable = false)
+    private String street;
+
+    @NotNull
+    @Column(name = "city", nullable = false)
+    private String city;
+
+    @NotNull
+    @Column(name = "state", nullable = false)
+    private String state;
+
+    @NotNull
+    @Column(name = "zip_code", nullable = false)
+    private String zipCode;
+
+    @Column(name = "mudflap_code")
+    private String mudflapCode;
+
+    @ManyToOne(optional = false)
+    @NotNull
+    @JsonIgnoreProperties("truckStops")
+    private User owner;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
         return id;
@@ -46,6 +81,110 @@ public class TruckStop implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Float getBasePrice() {
+        return basePrice;
+    }
+
+    public TruckStop basePrice(Float basePrice) {
+        this.basePrice = basePrice;
+        return this;
+    }
+
+    public void setBasePrice(Float basePrice) {
+        this.basePrice = basePrice;
+    }
+
+    public Float getOpisPrice() {
+        return opisPrice;
+    }
+
+    public TruckStop opisPrice(Float opisPrice) {
+        this.opisPrice = opisPrice;
+        return this;
+    }
+
+    public void setOpisPrice(Float opisPrice) {
+        this.opisPrice = opisPrice;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public TruckStop street(String street) {
+        this.street = street;
+        return this;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public TruckStop city(String city) {
+        this.city = city;
+        return this;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public TruckStop state(String state) {
+        this.state = state;
+        return this;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public TruckStop zipCode(String zipCode) {
+        this.zipCode = zipCode;
+        return this;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    public String getMudflapCode() {
+        return mudflapCode;
+    }
+
+    public TruckStop mudflapCode(String mudflapCode) {
+        this.mudflapCode = mudflapCode;
+        return this;
+    }
+
+    public void setMudflapCode(String mudflapCode) {
+        this.mudflapCode = mudflapCode;
+    }
+
+    public User getOwner() {
+        return owner;
+    }
+
+    public TruckStop owner(User user) {
+        this.owner = user;
+        return this;
+    }
+
+    public void setOwner(User user) {
+        this.owner = user;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 
@@ -70,6 +209,13 @@ public class TruckStop implements Serializable {
         return "TruckStop{" +
             "id=" + getId() +
             ", name='" + getName() + "'" +
+            ", basePrice=" + getBasePrice() +
+            ", opisPrice=" + getOpisPrice() +
+            ", street='" + getStreet() + "'" +
+            ", city='" + getCity() + "'" +
+            ", state='" + getState() + "'" +
+            ", zipCode='" + getZipCode() + "'" +
+            ", mudflapCode='" + getMudflapCode() + "'" +
             "}";
     }
 }

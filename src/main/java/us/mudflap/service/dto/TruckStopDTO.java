@@ -13,6 +13,32 @@ public class TruckStopDTO implements Serializable {
     @NotNull
     private String name;
 
+    @NotNull
+    @DecimalMin(value = "0")
+    private Float basePrice;
+
+    @NotNull
+    @DecimalMin(value = "0")
+    private Float opisPrice;
+
+    @NotNull
+    private String street;
+
+    @NotNull
+    private String city;
+
+    @NotNull
+    private String state;
+
+    @NotNull
+    private String zipCode;
+
+    private String mudflapCode;
+
+
+    private Long ownerId;
+
+    private String ownerLogin;
 
     public Long getId() {
         return id;
@@ -28,6 +54,78 @@ public class TruckStopDTO implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Float getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(Float basePrice) {
+        this.basePrice = basePrice;
+    }
+
+    public Float getOpisPrice() {
+        return opisPrice;
+    }
+
+    public void setOpisPrice(Float opisPrice) {
+        this.opisPrice = opisPrice;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    public String getMudflapCode() {
+        return mudflapCode;
+    }
+
+    public void setMudflapCode(String mudflapCode) {
+        this.mudflapCode = mudflapCode;
+    }
+
+    public Long getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(Long userId) {
+        this.ownerId = userId;
+    }
+
+    public String getOwnerLogin() {
+        return ownerLogin;
+    }
+
+    public void setOwnerLogin(String userLogin) {
+        this.ownerLogin = userLogin;
     }
 
     @Override
@@ -56,6 +154,15 @@ public class TruckStopDTO implements Serializable {
         return "TruckStopDTO{" +
             "id=" + getId() +
             ", name='" + getName() + "'" +
+            ", basePrice=" + getBasePrice() +
+            ", opisPrice=" + getOpisPrice() +
+            ", street='" + getStreet() + "'" +
+            ", city='" + getCity() + "'" +
+            ", state='" + getState() + "'" +
+            ", zipCode='" + getZipCode() + "'" +
+            ", mudflapCode='" + getMudflapCode() + "'" +
+            ", owner=" + getOwnerId() +
+            ", owner='" + getOwnerLogin() + "'" +
             "}";
     }
 }
