@@ -4,13 +4,6 @@ import { Alert, Modal, ModalHeader, Button } from 'reactstrap';
 import { AvForm, AvField } from 'availity-reactstrap-validation';
 import TruckStopNav from './truck-stop-nav';
 
-const smallFooter = {
-  display: 'block',
-  padding: '20px 0 10px',
-  textAlign: 'center',
-  color: '#666666'
-};
-
 class PriceForm extends React.Component<any, any> {
   constructor(props) {
     super(props);
@@ -24,7 +17,8 @@ class PriceForm extends React.Component<any, any> {
       saved: false,
       loaded: false,
       opis_price: 0.0,
-      last_update: formatted_date
+      last_update: formatted_date,
+      subRoute: '#pricing'
     };
   }
 
@@ -67,9 +61,9 @@ class PriceForm extends React.Component<any, any> {
     }
   };
 
-  setGlobalState = (name, state) => {
-    state['base_price'] = +parseFloat(state['base_price']).toFixed(2);
-    this.setState(state);
+  setDashboardRoute = subRoute => {
+    // state['base_price'] = +parseFloat(state['base_price']).toFixed(2); // TODO: What is this doing? This doesn't look right
+    this.setState({ subRoute });
   };
 
   set_auto_price = () => {
@@ -186,7 +180,7 @@ class PriceForm extends React.Component<any, any> {
 
     const content = (
       <div>
-        <TruckStopNav />
+        <TruckStopNav subRoute={this.state.subRoute} setDashboardRoute={this.setDashboardRoute} />
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <div id="ported-styles" className="setpricemaster-div">
             {truckstopname_div}
@@ -207,61 +201,53 @@ class PriceForm extends React.Component<any, any> {
                   <div className="pricechange-desc">{price_text}</div>
                   <div className="pricechange-number">
                     <AvForm
-                      style={{ display: 'flex', justifyContent: 'center' }}
+                      // style={{ display: 'flex', justifyContent: 'center' }}
                       key={this.state.automatic_pricing}
                       defaults={this.state}
-                      setGlobalState={this.setGlobalState}
-                      autoSetGlobalState
-                      globalStateName={'truckstop_form'}
+                      // setDashboardState={this.setDashboardState}
+                      // autosetDashboardState
+                      // globalStateName={'truckstop_form'}
                     >
-                      <div className="pricechange-dollar">$</div>
-                      <AvField
-                        id="truck-stop-basePrice"
-                        type="number"
-                        className="form-control"
-                        name="base_price"
-                        step="0.01"
-                        validate={{
-                          required: { value: true, errorMessage: 'This field is required.' },
-                          min: { value: 0, errorMessage: 'This field should be at least 0.' },
-                          number: { value: true, errorMessage: 'This field should be a number.' }
-                        }}
-                      />
-                      {
-                        // <NumberInput name="base_price" step={0.01} />
-                      }
+                      <div className="d-flex justify-content-center">
+                        <div className="pricechange-dollar">$</div>
+                        <AvField
+                          id="truck-stop-basePrice"
+                          type="number"
+                          className="form-control"
+                          name="base_price"
+                          step="0.01"
+                          validate={{
+                            required: { value: true, errorMessage: 'This field is required.' },
+                            min: { value: 0, errorMessage: 'This field should be at least 0.' },
+                            number: { value: true, errorMessage: 'This field should be a number.' }
+                          }}
+                        />
+                      </div>
+                      <Button color="primary" type="pricechange-save" className="btn-pricechange-save" onClick={this.save_modal}>
+                        Save
+                      </Button>
                     </AvForm>
                   </div>
                 </div>
-                <Button color="primary" className="btn-pricechange-save" onClick={this.save_modal}>
-                  Save
-                </Button>
-                {
-                  // <Button type="pricechange-save" onClick={this.save_modal} text="Save" />
-                }
                 {saved}
                 <div className="pricelist-ctr">
                   {opis_price}
                   {partner_price}
                 </div>
 
-                <Modal onHide={this.onHide} show={this.state.modal}>
-                  {modal_text}
-                </Modal>
+                {/* toggle={this.handleClose} */}
+                {/* onHide={this.onHide} */}
+                <Modal isOpen={this.state.modal}>{modal_text}</Modal>
               </div>
             </div>
-            {
-              // style={smallFooter}
-            }
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: 15, fontSize: 12.8, fontWeight: 400 }}>
+            <small style={{ display: 'block', padding: '20px 0 10px', textAlign: 'center', color: '#666666' }}>
               <span>{`Data Refreshed As Of: ${this.state.last_update}`}</span>
-            </div>
+            </small>
           </div>
         </div>
       </div>
     );
 
-    // return <Wrapper content={content} loaded={this.state.loaded} />;
     return content;
   }
 }

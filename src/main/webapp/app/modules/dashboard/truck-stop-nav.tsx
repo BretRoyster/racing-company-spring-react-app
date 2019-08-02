@@ -3,19 +3,41 @@ import TruckStopNavLink from './truck-stop-nav-link';
 
 class TruckStopNav extends React.Component<any, any> {
   render() {
-    const links = [['/dashboard/', 'Set Price'], ['/settings/', 'Profile']];
-    const page_title = 'Pit Stop Dashboard';
+    const links = [
+      {
+        label: 'Set Price',
+        route: '#pricing',
+        css: 'pricing'
+      },
+      {
+        label: 'Profile',
+        route: '#details',
+        css: 'details'
+      }
+    ];
+    const page_title = 'Truck Stop Dashboard';
 
     const linkHTML = [];
     links.forEach((elem, index) => {
-      linkHTML.push(<TruckStopNavLink name={links[index][1]} link={links[index][0]} setGlobalState={this.props.setGlobalState} />);
+      const { label, route, css } = links[index];
+      linkHTML.push(
+        <TruckStopNavLink
+          key={label}
+          name={label}
+          link={route}
+          css={this.props.subRoute === route ? css : ''}
+          setDashboardRoute={this.props.setDashboardRoute}
+        />
+      );
     });
 
     return (
       <div className="navbar-wrap-container">
-        <div className="topnavbar-list" id={this.props.addmoreclass}>
+        <div className="topnavbar-list">
           <div className="pagetitlenav-name">{page_title}</div>
-          <ul className="navbar-nav mr-4 topnavbar-menu">{linkHTML}</ul>
+          <ul className="navbar-nav mr-4 topnavbar-menu" style={{ width: 185 }}>
+            {linkHTML}
+          </ul>
         </div>
       </div>
     );
