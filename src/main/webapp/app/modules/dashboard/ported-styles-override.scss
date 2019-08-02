@@ -37,3 +37,9 @@
   margin-left: -35px;
   margin-right: -35px;
 }
+
+.topnavbar-list .nav-item.pricing a,
+.topnavbar-list .nav-item.details a {
+  color: #28a745 !important;
+  font-weight: bold;
+}
