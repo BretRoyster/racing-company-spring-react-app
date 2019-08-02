@@ -4,7 +4,7 @@ import TruckStopNavLink from './truck-stop-nav-link';
 class TruckStopNav extends React.Component<any, any> {
   render() {
     const links = [['/dashboard/', 'Set Price'], ['/settings/', 'Profile']];
-    const page_title = 'Truck Stop Dashboard';
+    const page_title = 'Pit Stop Dashboard';
 
     const linkHTML = [];
     links.forEach((elem, index) => {

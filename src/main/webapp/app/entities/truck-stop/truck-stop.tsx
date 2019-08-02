@@ -78,10 +78,10 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
     return (
       <div>
         <h2 id="truck-stop-heading">
-          Truck Stops
+          Pit Stops
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
             <FontAwesomeIcon icon="plus" />
-            &nbsp; Create new Truck Stop
+            &nbsp; Create new Pit Stop
           </Link>
         </h2>
         <Row>
@@ -116,10 +116,10 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
                     Name <FontAwesomeIcon icon="sort" />
                   </th>
                   <th className="hand" onClick={this.sort('basePrice')}>
-                    Base Price <FontAwesomeIcon icon="sort" />
+                    Gas Price <FontAwesomeIcon icon="sort" />
                   </th>
                   <th className="hand" onClick={this.sort('opisPrice')}>
-                    Opis Price <FontAwesomeIcon icon="sort" />
+                    Service Price <FontAwesomeIcon icon="sort" />
                   </th>
                   <th className="hand" onClick={this.sort('street')}>
                     Street <FontAwesomeIcon icon="sort" />
@@ -133,9 +133,11 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
                   <th className="hand" onClick={this.sort('zipCode')}>
                     Zip Code <FontAwesomeIcon icon="sort" />
                   </th>
-                  <th className="hand" onClick={this.sort('mudflapCode')}>
-                    Mudflap Code <FontAwesomeIcon icon="sort" />
-                  </th>
+                  {
+                    // <th className="hand" onClick={this.sort('mudflapCode')}>
+                    //   Mudflap Code <FontAwesomeIcon icon="sort" />
+                    // </th>
+                  }
                   <th>
                     Owner <FontAwesomeIcon icon="sort" />
                   </th>
@@ -157,7 +159,9 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
                     <td>{truckStop.city}</td>
                     <td>{truckStop.state}</td>
                     <td>{truckStop.zipCode}</td>
-                    <td>{truckStop.mudflapCode}</td>
+                    {
+                      // <td>{truckStop.mudflapCode}</td>
+                    }
                     <td>{truckStop.ownerLogin ? truckStop.ownerLogin : ''}</td>
                     <td className="text-right">
                       <div className="btn-group flex-btn-group-container">
@@ -177,7 +181,7 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
               </tbody>
             </Table>
           ) : (
-            <div className="alert alert-warning">No Truck Stops found</div>
+            <div className="alert alert-warning">No Pit Stops found</div>
           )}
         </div>
         <div className={truckStopList && truckStopList.length > 0 ? '' : 'd-none'}>

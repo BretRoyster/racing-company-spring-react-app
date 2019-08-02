@@ -9,10 +9,13 @@ const Footer = props => (
   <div className="footer page-content">
     <Row>
       <Col md="12">
-        <a href="https://www.mudflapinc.com/merchant-terms/" target="_new">
-          Merchant Terms of Use
-        </a>
-        <br />© Mudflap 2019
+        {
+          // target="_new"
+        }
+        <a href="javascript:void()">Merchant Terms of Use</a>
+        <br />© Racing Company 2019
+        <br />
+        Hey! This isn't a real company (just FYI)
         <span className="navbar-version">v. {appConfig.VERSION}</span>
       </Col>
     </Row>

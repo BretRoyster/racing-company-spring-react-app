@@ -4,7 +4,7 @@
     <base href="/" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mudflap</title>
+    <title>Racing Company</title>
     <meta name="description" content="Description for mudflapTruckstopWeb">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -14,13 +14,14 @@
     <!-- jhipster-needle-add-resources-to-root - JHipster will add new resources here -->
 </head>
 <body>
-    <!--[if lt IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <p class="browserupgrade" style="display: none;">
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.<br /><br />
+        <strong>We also <u>do not support Internet Explorer</u>.</strong> And you shouldn't either. <a href="https://medium.com/@burger.neal/the-end-of-life-of-internet-explorer-11-12736f9ff75f">Here's why.</a>
+    </p>
     <div id="root">
         <div class="app-loading">
             <div class="lds-css ng-scope">
-                <img src="content/images/mudflap_logo.png" style="height: 34px;" alt="Logo" />
+                <img src="content/images/racing_logo.jpg" style="height: 150px;" alt="Logo" />
                 <div style="display: flex; justify-content: center">
                     <p>Loading...</p>
                 </div>
@@ -34,7 +35,7 @@
             <div id="jhipster-error" style="display:none">
                 <!-- This content is for troubleshooting purpose and will be removed when app renders -->
                 <h1>An error has occurred :-(</h1>
-                <p>If your problem persists, please contact <a href="mailto:support@mudflapinc.com">support@mudflapinc.com</a></p>
+                <p>If your problem persists, please contact <a href="mailto:support@fake.demo">support@fake.demo</a></p>
                 <!-- <h2>Usual error causes</h2>
                 <ol>
                     <li>You started the application from an IDE and you didn't run <code style="color:red">npm start</code> or <code style="color:red">npm run webpack:build</code>.</li>
@@ -76,6 +77,18 @@
     <noscript>
         <h1>You must enable javascript to view this page.</h1>
     </noscript>
+    <script type="text/javascript">
+        function msieversion() {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE ");
+            var isIE = msie > 0 || navigator.userAgent.match(/Trident.*rv\:11\./);
+            if (isIE) {
+                document.querySelector('p.browserupgrade').removeAttribute('style');
+            }
+            return false;
+        }
+        msieversion();
+    </script>
     <script type="text/javascript" language="javascript">
         window.onload=function() {
             setTimeout(showError, 4000);

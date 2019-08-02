@@ -33,7 +33,7 @@ describe('TruckStop e2e test', () => {
   it('should load TruckStops', async () => {
     await navBarPage.getEntityPage('truck-stop');
     truckStopComponentsPage = new TruckStopComponentsPage();
-    expect(await truckStopComponentsPage.getTitle().getText()).to.match(/Truck Stops/);
+    expect(await truckStopComponentsPage.getTitle().getText()).to.match(/Pit Stops/);
   });
 
   it('should load create TruckStop page', async () => {

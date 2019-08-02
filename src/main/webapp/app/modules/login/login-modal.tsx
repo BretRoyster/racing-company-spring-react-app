@@ -29,7 +29,7 @@ class LoginModal extends React.Component<ILoginModalProps> {
           {
             // toggle={handleClose}
           }
-          <img src="content/images/mudflap_logo.png" style={{ maxWidth: 300 }} alt="Logo" />
+          <img src="content/images/racing_logo.jpg" style={{ maxWidth: 300 }} alt="Logo" />
         </div>
         <div className="login-box">
           <div style={{ maxWidth: 450 }}>
