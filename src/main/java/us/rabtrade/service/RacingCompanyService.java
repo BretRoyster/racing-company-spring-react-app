@@ -47,9 +47,9 @@ public class RacingCompanyService {
     public RacingCompanyDTO save(RacingCompanyDTO racingCompanyDTO) {
         log.debug("Request to save RacingCompany : {}", racingCompanyDTO);
         RacingCompany racingCompany = racingCompanyMapper.toEntity(racingCompanyDTO);
-        racingCompany = racingCompanyRepository.save(racingCompany);
+        // racingCompany = racingCompanyRepository.save(racingCompany);
         RacingCompanyDTO result = racingCompanyMapper.toDto(racingCompany);
-        racingCompanySearchRepository.save(racingCompany);
+//        racingCompanySearchRepository.save(racingCompany);
         return result;
     }
 
@@ -87,8 +87,8 @@ public class RacingCompanyService {
      */
     public void delete(Long id) {
         log.debug("Request to delete RacingCompany : {}", id);
-        racingCompanyRepository.deleteById(id);
-        racingCompanySearchRepository.deleteById(id);
+        // racingCompanyRepository.deleteById(id);
+        // racingCompanySearchRepository.deleteById(id);
     }
 
     /**
