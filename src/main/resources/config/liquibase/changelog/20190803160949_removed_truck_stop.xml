@@ -1,0 +1,15 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="bret (generated)" id="1564848600428-3">
+        <dropForeignKeyConstraint baseTableName="truck_stop" constraintName="FK2122g1lekjvbcmmgcclsegkil"/>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564848600428-4">
+        <dropUniqueConstraint constraintName="uc_truck_stopname_col" tableName="truck_stop"/>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564848600428-5">
+        <dropUniqueConstraint constraintName="ux_truck_stop_name" tableName="truck_stop"/>
+    </changeSet>
+    <changeSet author="bret (generated)" id="1564848600428-6">
+        <dropTable tableName="truck_stop"/>
+    </changeSet>
+</databaseChangeLog>
