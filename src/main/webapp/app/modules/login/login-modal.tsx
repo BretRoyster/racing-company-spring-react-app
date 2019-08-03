@@ -13,11 +13,25 @@ export interface ILoginModalProps {
   handleClose: Function;
 }
 
-class LoginModal extends React.Component<ILoginModalProps> {
+class LoginModal extends React.Component<ILoginModalProps, any> {
+  state = {
+    callout: false
+  };
+
   handleSubmit = (event, errors, { username, password, rememberMe }) => {
     const { handleLogin } = this.props;
     handleLogin(username, password, rememberMe);
   };
+
+  closeCallout = () => {
+    this.setState({ callout: false });
+  };
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ callout: true });
+    }, 1000);
+  }
 
   render() {
     const { loginError, handleClose } = this.props;
@@ -91,6 +105,30 @@ class LoginModal extends React.Component<ILoginModalProps> {
             Forgot your password? <Link to="/reset/request">Reset Password</Link>
           </span>
         </div>
+
+        {this.state.callout ? (
+          <div className="callout">
+            <div className="callout-header">Welcome!</div>
+            <span className="closebtn" onClick={this.closeCallout}>
+              ×
+            </span>
+            <div className="callout-container">
+              <p>
+                <strong>I'm Bret.</strong>
+                <br />
+                <br />
+                This is my "Racing Company" demo webapp!
+                <br />
+                <br />
+                Log in with each user type to learn more about the demo:
+                <ul>
+                  <li>user / user</li>
+                  <li>admin / admin</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        ) : null}
       </AvForm>
       // </Modal>
     );

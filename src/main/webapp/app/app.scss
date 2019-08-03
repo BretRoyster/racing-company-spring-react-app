@@ -318,3 +318,39 @@ http://stackoverflow.com/questions/23436430/bootstrap-3-input-group-100-width */
 }
 
 /* jhipster-needle-scss-add-main JHipster will add new css style */
+
+// Repurposed from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_callout (quick and dirty wins the race!)
+
+.callout {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  margin-left: 20px;
+  max-width: 322px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
