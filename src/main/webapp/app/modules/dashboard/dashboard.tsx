@@ -5,7 +5,7 @@ import { AvForm, AvField } from 'availity-reactstrap-validation';
 import TruckStopNav from './truck-stop-nav';
 
 /*
- * 
+ *
    Sorry code reviewer! This is a failed project for a potential client that couldn't pay!
 
    - See: getStory method below for the "story"
@@ -315,16 +315,12 @@ class PriceForm extends React.Component<any, any> {
     this.setState({ callout: false });
   };
 
-  continueStory = hasNextStory => {
-    return () => {
-      if (hasNextStory) {
-        this.setState(prevState => {
-          return { storyIndex: prevState.storyIndex + 1 };
-        });
-      } else {
-        this.closeCallout();
-      }
-    };
+  continueStory = hasNextStory => () => {
+    if (hasNextStory) {
+      this.setState(prevState => ({ storyIndex: prevState.storyIndex + 1 }));
+    } else {
+      this.closeCallout();
+    }
   };
 
   getStory = index => {
