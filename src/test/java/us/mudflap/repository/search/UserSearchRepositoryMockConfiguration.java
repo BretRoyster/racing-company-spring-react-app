@@ -1,4 +1,4 @@
-package us.mudflap.repository.search;
+package us.rabtrade.repository.search;
 
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Configuration;

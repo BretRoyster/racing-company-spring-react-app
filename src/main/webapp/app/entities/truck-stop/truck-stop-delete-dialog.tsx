@@ -31,7 +31,7 @@ export class TruckStopDeleteDialog extends React.Component<ITruckStopDeleteDialo
     return (
       <Modal isOpen toggle={this.handleClose}>
         <ModalHeader toggle={this.handleClose}>Confirm delete operation</ModalHeader>
-        <ModalBody id="mudflapTruckstopWebApp.truckStop.delete.question">Are you sure you want to delete this TruckStop?</ModalBody>
+        <ModalBody id="racingCompanyWebApp.truckStop.delete.question">Are you sure you want to delete this TruckStop?</ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={this.handleClose}>
             <FontAwesomeIcon icon="ban" />

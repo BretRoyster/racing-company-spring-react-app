@@ -1,9 +1,9 @@
-package us.mudflap.service;
+package us.rabtrade.service;
 
-import us.mudflap.config.Constants;
+import us.rabtrade.config.Constants;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.domain.User;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -42,7 +42,7 @@ import static org.mockito.Mockito.*;
 /**
  * Integration tests for {@link MailService}.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 public class MailServiceIT {
 
     private static String[] languages = {

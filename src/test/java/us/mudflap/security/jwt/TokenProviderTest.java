@@ -1,6 +1,6 @@
-package us.mudflap.security.jwt;
+package us.rabtrade.security.jwt;
 
-import us.mudflap.security.AuthoritiesConstants;
+import us.rabtrade.security.AuthoritiesConstants;
 
 import java.security.Key;
 import java.util.*;

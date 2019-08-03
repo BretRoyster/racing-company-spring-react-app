@@ -76,7 +76,7 @@ export class TruckStopUpdate extends React.Component<ITruckStopUpdateProps, ITru
       <div>
         <Row className="justify-content-center">
           <Col md="8">
-            <h2 id="mudflapTruckstopWebApp.truckStop.home.createOrEditLabel">Create or edit a TruckStop</h2>
+            <h2 id="racingCompanyWebApp.truckStop.home.createOrEditLabel">Create or edit a TruckStop</h2>
           </Col>
         </Row>
         <Row className="justify-content-center">
@@ -189,10 +189,10 @@ export class TruckStopUpdate extends React.Component<ITruckStopUpdateProps, ITru
                   />
                 </AvGroup>
                 <AvGroup>
-                  <Label id="mudflapCodeLabel" for="truck-stop-mudflapCode">
-                    Mudflap Code
+                  <Label id="racingCodeLabel" for="truck-stop-racingCode">
+                    Racing Code
                   </Label>
-                  <AvField id="truck-stop-mudflapCode" type="text" name="mudflapCode" />
+                  <AvField id="truck-stop-racingCode" type="text" name="racingCode" />
                 </AvGroup>
                 <AvGroup>
                   <Label for="truck-stop-owner">Owner</Label>

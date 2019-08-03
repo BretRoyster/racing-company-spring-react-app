@@ -1,6 +1,6 @@
 {
-  "name": "mudflapTruckstopWeb",
-  "short_name": "mudflapTruckstopWeb",
+  "name": "racingCompanyWeb",
+  "short_name": "racingCompanyWeb",
   "icons": [
       {
           "src": "./content/images/jhipster_family_member_0_head-192.png",

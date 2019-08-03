@@ -1,8 +1,8 @@
-package us.mudflap.config.timezone;
+package us.rabtrade.config.timezone;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.repository.timezone.DateTimeWrapper;
-import us.mudflap.repository.timezone.DateTimeWrapperRepository;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.repository.timezone.DateTimeWrapper;
+import us.rabtrade.repository.timezone.DateTimeWrapperRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for the UTC Hibernate configuration.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 public class HibernateTimeZoneIT {
 
     @Autowired

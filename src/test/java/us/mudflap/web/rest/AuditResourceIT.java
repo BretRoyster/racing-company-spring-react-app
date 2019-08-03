@@ -1,11 +1,11 @@
-package us.mudflap.web.rest;
+package us.rabtrade.web.rest;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.config.audit.AuditEventConverter;
-import us.mudflap.domain.PersistentAuditEvent;
-import us.mudflap.repository.PersistenceAuditEventRepository;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.config.audit.AuditEventConverter;
+import us.rabtrade.domain.PersistentAuditEvent;
+import us.rabtrade.repository.PersistenceAuditEventRepository;
 
-import us.mudflap.service.AuditEventService;
+import us.rabtrade.service.AuditEventService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockitoAnnotations;
@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link AuditResource} REST controller.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 @Transactional
 public class AuditResourceIT {
 

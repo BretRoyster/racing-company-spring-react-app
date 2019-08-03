@@ -125,8 +125,8 @@ class PriceForm extends React.Component<any, any> {
     //   'POST',
     //   '/api/email/',
     //   {
-    //     to: 'sharon@mudflapinc.com',
-    //     from: 'support@mudflap.us',
+    //     to: '',
+    //     from: '',
     //     subject: 'Truckstop Changed Their Pricing',
     //     text: 'The truckstop ' + this.state.name + ' changed their pricing to ' + automatic + '. The new partner price is: ' + partner_price
     //   },

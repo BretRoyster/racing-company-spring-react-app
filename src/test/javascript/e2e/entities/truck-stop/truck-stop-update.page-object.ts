@@ -1,7 +1,7 @@
 import { element, by, ElementFinder } from 'protractor';
 
 export default class TruckStopUpdatePage {
-  pageTitle: ElementFinder = element(by.id('mudflapTruckstopWebApp.truckStop.home.createOrEditLabel'));
+  pageTitle: ElementFinder = element(by.id('racingCompanyWebApp.truckStop.home.createOrEditLabel'));
   saveButton: ElementFinder = element(by.id('save-entity'));
   cancelButton: ElementFinder = element(by.id('cancel-save'));
   nameInput: ElementFinder = element(by.css('input#truck-stop-name'));
@@ -11,7 +11,7 @@ export default class TruckStopUpdatePage {
   cityInput: ElementFinder = element(by.css('input#truck-stop-city'));
   stateInput: ElementFinder = element(by.css('input#truck-stop-state'));
   zipCodeInput: ElementFinder = element(by.css('input#truck-stop-zipCode'));
-  mudflapCodeInput: ElementFinder = element(by.css('input#truck-stop-mudflapCode'));
+  racingCodeInput: ElementFinder = element(by.css('input#truck-stop-racingCode'));
   ownerSelect: ElementFinder = element(by.css('select#truck-stop-owner'));
 
   getPageTitle() {
@@ -74,12 +74,12 @@ export default class TruckStopUpdatePage {
     return this.zipCodeInput.getAttribute('value');
   }
 
-  async setMudflapCodeInput(mudflapCode) {
-    await this.mudflapCodeInput.sendKeys(mudflapCode);
+  async setRacingCodeInput(racingCode) {
+    await this.racingCodeInput.sendKeys(racingCode);
   }
 
-  async getMudflapCodeInput() {
-    return this.mudflapCodeInput.getAttribute('value');
+  async getRacingCodeInput() {
+    return this.racingCodeInput.getAttribute('value');
   }
 
   async ownerSelectLastOption() {

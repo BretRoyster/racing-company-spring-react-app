@@ -33,7 +33,7 @@ export default class TruckStopComponentsPage {
 }
 
 export class TruckStopDeleteDialog {
-  private dialogTitle: ElementFinder = element(by.id('mudflapTruckstopWebApp.truckStop.delete.question'));
+  private dialogTitle: ElementFinder = element(by.id('racingCompanyWebApp.truckStop.delete.question'));
   private confirmButton = element(by.id('jhi-confirm-delete-truckStop'));
 
   getDialogTitle() {

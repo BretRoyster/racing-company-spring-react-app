@@ -1,6 +1,6 @@
-package us.mudflap.web.rest;
+package us.rabtrade.web.rest;
 
-import us.mudflap.MudflapTruckstopWebApp;
+import us.rabtrade.RacingCompanyWebApp;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link ClientForwardController} REST controller.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 public class ClientForwardControllerIT {
 
     private MockMvc restMockMvc;

@@ -134,8 +134,8 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
                     Zip Code <FontAwesomeIcon icon="sort" />
                   </th>
                   {
-                    // <th className="hand" onClick={this.sort('mudflapCode')}>
-                    //   Mudflap Code <FontAwesomeIcon icon="sort" />
+                    // <th className="hand" onClick={this.sort('racingCode')}>
+                    //   Racing Code <FontAwesomeIcon icon="sort" />
                     // </th>
                   }
                   <th>
@@ -160,7 +160,7 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
                     <td>{truckStop.state}</td>
                     <td>{truckStop.zipCode}</td>
                     {
-                      // <td>{truckStop.mudflapCode}</td>
+                      // <td>{truckStop.racingCode}</td>
                     }
                     <td>{truckStop.ownerLogin ? truckStop.ownerLogin : ''}</td>
                     <td className="text-right">

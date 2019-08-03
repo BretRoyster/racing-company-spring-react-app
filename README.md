@@ -1,4 +1,4 @@
-# mudflapTruckstopWeb
+# racingCompanyWeb
 
 This application was generated using JHipster 6.1.2, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.1.2](https://www.jhipster.tech/documentation-archive/v6.1.2).
 
@@ -79,7 +79,7 @@ Refer to [Doing API-First development][] for more details.
 
 ### Packaging as jar
 
-To build the final jar and optimize the mudflapTruckstopWeb application for production, run:
+To build the final jar and optimize the racingCompanyWeb application for production, run:
 
     ./mvnw -Pprod clean verify
 

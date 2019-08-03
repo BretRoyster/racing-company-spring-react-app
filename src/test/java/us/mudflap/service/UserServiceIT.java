@@ -1,12 +1,12 @@
-package us.mudflap.service;
+package us.rabtrade.service;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.config.Constants;
-import us.mudflap.domain.User;
-import us.mudflap.repository.search.UserSearchRepository;
-import us.mudflap.repository.UserRepository;
-import us.mudflap.service.dto.UserDTO;
-import us.mudflap.service.util.RandomUtil;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.config.Constants;
+import us.rabtrade.domain.User;
+import us.rabtrade.repository.search.UserSearchRepository;
+import us.rabtrade.repository.UserRepository;
+import us.rabtrade.service.dto.UserDTO;
+import us.rabtrade.service.util.RandomUtil;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.BeforeEach;
@@ -35,7 +35,7 @@ import static org.mockito.Mockito.when;
 /**
  * Integration tests for {@link UserService}.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 @Transactional
 public class UserServiceIT {
 
@@ -58,9 +58,9 @@ public class UserServiceIT {
     private UserService userService;
 
     /**
-     * This repository is mocked in the us.mudflap.repository.search test package.
+     * This repository is mocked in the us.rabtrade.repository.search test package.
      *
-     * @see us.mudflap.repository.search.UserSearchRepositoryMockConfiguration
+     * @see us.rabtrade.repository.search.UserSearchRepositoryMockConfiguration
      */
     @Autowired
     private UserSearchRepository mockUserSearchRepository;

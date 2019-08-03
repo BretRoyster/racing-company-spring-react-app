@@ -16,7 +16,7 @@
     </changeSet>
     <changeSet author="bret (generated)" id="1564532727647-6">
         <addColumn tableName="truck_stop">
-            <column name="mudflap_code" type="text"/>
+            <column name="racing_code" type="text"/>
         </addColumn>
     </changeSet>
     <changeSet author="bret (generated)" id="1564532727647-7">

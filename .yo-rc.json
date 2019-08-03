@@ -1,13 +1,13 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "us.mudflap"
+      "packageName": "us.rabtrade"
     },
     "jhipsterVersion": "6.1.2",
     "applicationType": "monolith",
-    "baseName": "mudflapTruckstopWeb",
-    "packageName": "us.mudflap",
-    "packageFolder": "us/mudflap",
+    "baseName": "racingCompanyWeb",
+    "packageName": "us.rabtrade",
+    "packageFolder": "us/rabtrade",
     "serverPort": "8080",
     "authenticationType": "jwt",
     "cacheProvider": "memcached",
@@ -26,11 +26,7 @@
     "clientFramework": "react",
     "clientTheme": "litera",
     "clientThemeVariant": "primary",
-    "testFrameworks": [
-      "gatling",
-      "cucumber",
-      "protractor"
-    ],
+    "testFrameworks": ["gatling", "cucumber", "protractor"],
     "jhiPrefix": "jhi",
     "entitySuffix": "",
     "dtoSuffix": "DTO",

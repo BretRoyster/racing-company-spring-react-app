@@ -1,6 +1,6 @@
-package us.mudflap.security.jwt;
+package us.rabtrade.security.jwt;
 
-import us.mudflap.security.AuthoritiesConstants;
+import us.rabtrade.security.AuthoritiesConstants;
 import io.github.jhipster.config.JHipsterProperties;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;

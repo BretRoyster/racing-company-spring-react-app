@@ -1,4 +1,4 @@
-package us.mudflap.cucumber.stepdefs;
+package us.rabtrade.cucumber.stepdefs;
 
 import org.springframework.test.web.servlet.ResultActions;
 

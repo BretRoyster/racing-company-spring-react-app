@@ -1,6 +1,6 @@
-package us.mudflap.cucumber;
+package us.rabtrade.cucumber;
 
-import us.mudflap.MudflapTruckstopWebApp;
+import us.rabtrade.RacingCompanyWebApp;
 import cucumber.api.java.Before;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
@@ -8,7 +8,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 @SpringBootTest
 @WebAppConfiguration
-@ContextConfiguration(classes = MudflapTruckstopWebApp.class)
+@ContextConfiguration(classes = RacingCompanyWebApp.class)
 public class CucumberContextConfiguration {
 
     @Before

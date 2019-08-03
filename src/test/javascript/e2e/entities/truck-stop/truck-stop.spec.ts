@@ -60,8 +60,8 @@ describe('TruckStop e2e test', () => {
             expect(await truckStopUpdatePage.getStateInput()).to.match(/state/);
             await truckStopUpdatePage.setZipCodeInput('zipCode');
             expect(await truckStopUpdatePage.getZipCodeInput()).to.match(/zipCode/);
-            await truckStopUpdatePage.setMudflapCodeInput('mudflapCode');
-            expect(await truckStopUpdatePage.getMudflapCodeInput()).to.match(/mudflapCode/);
+            await truckStopUpdatePage.setRacingCodeInput('racingCode');
+            expect(await truckStopUpdatePage.getRacingCodeInput()).to.match(/racingCode/);
             await truckStopUpdatePage.ownerSelectLastOption();
             await waitUntilDisplayed(truckStopUpdatePage.getSaveButton());
             await truckStopUpdatePage.save();
@@ -87,7 +87,7 @@ describe('TruckStop e2e test', () => {
         await waitUntilDisplayed(deleteModal);
 
         truckStopDeleteDialog = new TruckStopDeleteDialog();
-        expect(await truckStopDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/mudflapTruckstopWebApp.truckStop.delete.question/);
+        expect(await truckStopDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/racingCompanyWebApp.truckStop.delete.question/);
         await truckStopDeleteDialog.clickOnConfirmButton();
 
         await truckStopComponentsPage.waitUntilDeleteButtonsLength(nbButtonsBeforeDelete - 1);

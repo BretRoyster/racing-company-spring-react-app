@@ -1,8 +1,8 @@
-package us.mudflap.security;
+package us.rabtrade.security;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.domain.User;
-import us.mudflap.repository.UserRepository;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.domain.User;
+import us.rabtrade.repository.UserRepository;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,7 +22,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 /**
  * Integrations tests for {@link DomainUserDetailsService}.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 @Transactional
 public class DomainUserDetailsServiceIT {
 

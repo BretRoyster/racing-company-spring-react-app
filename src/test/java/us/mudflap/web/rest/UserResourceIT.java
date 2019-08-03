@@ -1,17 +1,17 @@
-package us.mudflap.web.rest;
+package us.rabtrade.web.rest;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.domain.Authority;
-import us.mudflap.domain.User;
-import us.mudflap.repository.UserRepository;
-import us.mudflap.repository.search.UserSearchRepository;
-import us.mudflap.security.AuthoritiesConstants;
-import us.mudflap.service.MailService;
-import us.mudflap.service.UserService;
-import us.mudflap.service.dto.UserDTO;
-import us.mudflap.service.mapper.UserMapper;
-import us.mudflap.web.rest.errors.ExceptionTranslator;
-import us.mudflap.web.rest.vm.ManagedUserVM;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.domain.Authority;
+import us.rabtrade.domain.User;
+import us.rabtrade.repository.UserRepository;
+import us.rabtrade.repository.search.UserSearchRepository;
+import us.rabtrade.security.AuthoritiesConstants;
+import us.rabtrade.service.MailService;
+import us.rabtrade.service.UserService;
+import us.rabtrade.service.dto.UserDTO;
+import us.rabtrade.service.mapper.UserMapper;
+import us.rabtrade.web.rest.errors.ExceptionTranslator;
+import us.rabtrade.web.rest.vm.ManagedUserVM;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -39,7 +39,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link UserResource} REST controller.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 public class UserResourceIT {
 
     private static final String DEFAULT_LOGIN = "johndoe";
@@ -69,9 +69,9 @@ public class UserResourceIT {
     private UserRepository userRepository;
 
     /**
-     * This repository is mocked in the us.mudflap.repository.search test package.
+     * This repository is mocked in the us.rabtrade.repository.search test package.
      *
-     * @see us.mudflap.repository.search.UserSearchRepositoryMockConfiguration
+     * @see us.rabtrade.repository.search.UserSearchRepositoryMockConfiguration
      */
     @Autowired
     private UserSearchRepository mockUserSearchRepository;

@@ -1,4 +1,4 @@
-package us.mudflap.security;
+package us.rabtrade.security;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

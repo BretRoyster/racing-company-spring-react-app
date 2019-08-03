@@ -1,4 +1,4 @@
-package us.mudflap.cucumber;
+package us.rabtrade.cucumber;
 
 import org.junit.runner.RunWith;
 

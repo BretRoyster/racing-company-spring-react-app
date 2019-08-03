@@ -1,0 +1,18 @@
+{
+    "folders":
+    [
+        {
+            "folder_exclude_patterns":
+            [
+                "node_modules",
+                "target",
+            ],
+            "file_exclude_patterns":
+            [
+                // "*.log"
+            ],
+			"name": "Racing Company Demo Project",
+			"path": "."
+		}
+    ]
+}

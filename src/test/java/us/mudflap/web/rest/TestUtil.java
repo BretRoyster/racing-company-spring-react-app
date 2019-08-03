@@ -1,4 +1,4 @@
-package us.mudflap.web.rest;
+package us.rabtrade.web.rest;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -7,7 +7,7 @@ export interface ITruckStop {
   city?: string;
   state?: string;
   zipCode?: string;
-  mudflapCode?: string;
+  racingCode?: string;
   ownerLogin?: string;
   ownerId?: number;
 }

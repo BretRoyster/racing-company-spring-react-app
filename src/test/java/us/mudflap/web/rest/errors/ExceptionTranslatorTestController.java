@@ -1,4 +1,4 @@
-package us.mudflap.web.rest.errors;
+package us.rabtrade.web.rest.errors;
 
 import org.springframework.dao.ConcurrencyFailureException;
 import org.springframework.http.HttpStatus;

@@ -57,9 +57,9 @@ export class TruckStopDetail extends React.Component<ITruckStopDetailProps> {
             </dt>
             <dd>{truckStopEntity.zipCode}</dd>
             <dt>
-              <span id="mudflapCode">Mudflap Code</span>
+              <span id="racingCode">Racing Code</span>
             </dt>
-            <dd>{truckStopEntity.mudflapCode}</dd>
+            <dd>{truckStopEntity.racingCode}</dd>
             <dt>Owner</dt>
             <dd>{truckStopEntity.ownerLogin ? truckStopEntity.ownerLogin : ''}</dd>
           </dl>

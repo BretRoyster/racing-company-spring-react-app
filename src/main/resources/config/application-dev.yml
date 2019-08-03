@@ -17,7 +17,7 @@ logging:
   level:
     ROOT: DEBUG
     io.github.jhipster: DEBUG
-    us.mudflap: DEBUG
+    us.rabtrade: DEBUG
 
 management:
   health:
@@ -41,7 +41,7 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/mudflapTruckstopWeb
+    url: jdbc:postgresql://localhost:5432/racingCompanyWeb
     username: postgres
     password: 123456
     hikari:
@@ -107,7 +107,7 @@ jhipster:
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
   mail: # specific JHipster mail property, for standard properties see MailProperties
-    from: mudflapTruckstopWeb@localhost
+    from: racingCompanyWeb@localhost
     base-url: http://127.0.0.1:8080
   metrics:
     logs: # Reports metrics in the logs

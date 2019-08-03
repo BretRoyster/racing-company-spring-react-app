@@ -1,4 +1,4 @@
-package us.mudflap.repository.timezone;
+package us.rabtrade.repository.timezone;
 
 import javax.persistence.*;
 import java.io.Serializable;

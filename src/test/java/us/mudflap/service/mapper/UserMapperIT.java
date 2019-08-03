@@ -1,9 +1,9 @@
-package us.mudflap.service.mapper;
+package us.rabtrade.service.mapper;
 
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.domain.User;
-import us.mudflap.service.dto.UserDTO;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.domain.User;
+import us.rabtrade.service.dto.UserDTO;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for {@link UserMapper}.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 public class UserMapperIT {
 
     private static final String DEFAULT_LOGIN = "johndoe";

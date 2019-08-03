@@ -1,4 +1,4 @@
-package us.mudflap.config;
+package us.rabtrade.config;
 
 import io.github.jhipster.config.JHipsterConstants;
 import io.github.jhipster.config.JHipsterProperties;

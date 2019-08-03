@@ -1,16 +1,16 @@
-package us.mudflap.web.rest;
+package us.rabtrade.web.rest;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.domain.TruckStop;
-import us.mudflap.domain.User;
-import us.mudflap.repository.TruckStopRepository;
-import us.mudflap.repository.search.TruckStopSearchRepository;
-import us.mudflap.service.TruckStopService;
-import us.mudflap.service.dto.TruckStopDTO;
-import us.mudflap.service.mapper.TruckStopMapper;
-import us.mudflap.web.rest.errors.ExceptionTranslator;
-import us.mudflap.service.dto.TruckStopCriteria;
-import us.mudflap.service.TruckStopQueryService;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.domain.TruckStop;
+import us.rabtrade.domain.User;
+import us.rabtrade.repository.TruckStopRepository;
+import us.rabtrade.repository.search.TruckStopSearchRepository;
+import us.rabtrade.service.TruckStopService;
+import us.rabtrade.service.dto.TruckStopDTO;
+import us.rabtrade.service.mapper.TruckStopMapper;
+import us.rabtrade.web.rest.errors.ExceptionTranslator;
+import us.rabtrade.service.dto.TruckStopCriteria;
+import us.rabtrade.service.TruckStopQueryService;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -31,7 +31,7 @@ import javax.persistence.EntityManager;
 import java.util.Collections;
 import java.util.List;
 
-import static us.mudflap.web.rest.TestUtil.createFormattingConversionService;
+import static us.rabtrade.web.rest.TestUtil.createFormattingConversionService;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.elasticsearch.index.query.QueryBuilders.queryStringQuery;
 import static org.hamcrest.Matchers.hasItem;
@@ -42,7 +42,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@Link TruckStopResource} REST controller.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 public class TruckStopResourceIT {
 
     private static final String DEFAULT_NAME = "AAAAAAAAAA";
@@ -66,8 +66,8 @@ public class TruckStopResourceIT {
     private static final String DEFAULT_ZIP_CODE = "AAAAAAAAAA";
     private static final String UPDATED_ZIP_CODE = "BBBBBBBBBB";
 
-    private static final String DEFAULT_MUDFLAP_CODE = "AAAAAAAAAA";
-    private static final String UPDATED_MUDFLAP_CODE = "BBBBBBBBBB";
+    private static final String DEFAULT_RACING_CODE = "AAAAAAAAAA";
+    private static final String UPDATED_RACING_CODE = "BBBBBBBBBB";
 
     @Autowired
     private TruckStopRepository truckStopRepository;
@@ -79,9 +79,9 @@ public class TruckStopResourceIT {
     private TruckStopService truckStopService;
 
     /**
-     * This repository is mocked in the us.mudflap.repository.search test package.
+     * This repository is mocked in the us.rabtrade.repository.search test package.
      *
-     * @see us.mudflap.repository.search.TruckStopSearchRepositoryMockConfiguration
+     * @see us.rabtrade.repository.search.TruckStopSearchRepositoryMockConfiguration
      */
     @Autowired
     private TruckStopSearchRepository mockTruckStopSearchRepository;
@@ -135,7 +135,7 @@ public class TruckStopResourceIT {
             .city(DEFAULT_CITY)
             .state(DEFAULT_STATE)
             .zipCode(DEFAULT_ZIP_CODE)
-            .mudflapCode(DEFAULT_MUDFLAP_CODE);
+            .racingCode(DEFAULT_RACING_CODE);
         // Add required entity
         User user = UserResourceIT.createEntity(em);
         em.persist(user);
@@ -158,7 +158,7 @@ public class TruckStopResourceIT {
             .city(UPDATED_CITY)
             .state(UPDATED_STATE)
             .zipCode(UPDATED_ZIP_CODE)
-            .mudflapCode(UPDATED_MUDFLAP_CODE);
+            .racingCode(UPDATED_RACING_CODE);
         // Add required entity
         User user = UserResourceIT.createEntity(em);
         em.persist(user);
@@ -195,7 +195,7 @@ public class TruckStopResourceIT {
         assertThat(testTruckStop.getCity()).isEqualTo(DEFAULT_CITY);
         assertThat(testTruckStop.getState()).isEqualTo(DEFAULT_STATE);
         assertThat(testTruckStop.getZipCode()).isEqualTo(DEFAULT_ZIP_CODE);
-        assertThat(testTruckStop.getMudflapCode()).isEqualTo(DEFAULT_MUDFLAP_CODE);
+        assertThat(testTruckStop.getRacingCode()).isEqualTo(DEFAULT_RACING_CODE);
 
         // Validate the TruckStop in Elasticsearch
         verify(mockTruckStopSearchRepository, times(1)).save(testTruckStop);
@@ -376,7 +376,7 @@ public class TruckStopResourceIT {
             .andExpect(jsonPath("$.[*].city").value(hasItem(DEFAULT_CITY.toString())))
             .andExpect(jsonPath("$.[*].state").value(hasItem(DEFAULT_STATE.toString())))
             .andExpect(jsonPath("$.[*].zipCode").value(hasItem(DEFAULT_ZIP_CODE.toString())))
-            .andExpect(jsonPath("$.[*].mudflapCode").value(hasItem(DEFAULT_MUDFLAP_CODE.toString())));
+            .andExpect(jsonPath("$.[*].racingCode").value(hasItem(DEFAULT_RACING_CODE.toString())));
     }
     
     @Test
@@ -397,7 +397,7 @@ public class TruckStopResourceIT {
             .andExpect(jsonPath("$.city").value(DEFAULT_CITY.toString()))
             .andExpect(jsonPath("$.state").value(DEFAULT_STATE.toString()))
             .andExpect(jsonPath("$.zipCode").value(DEFAULT_ZIP_CODE.toString()))
-            .andExpect(jsonPath("$.mudflapCode").value(DEFAULT_MUDFLAP_CODE.toString()));
+            .andExpect(jsonPath("$.racingCode").value(DEFAULT_RACING_CODE.toString()));
     }
 
     @Test
@@ -675,41 +675,41 @@ public class TruckStopResourceIT {
 
     @Test
     @Transactional
-    public void getAllTruckStopsByMudflapCodeIsEqualToSomething() throws Exception {
+    public void getAllTruckStopsByRacingCodeIsEqualToSomething() throws Exception {
         // Initialize the database
         truckStopRepository.saveAndFlush(truckStop);
 
-        // Get all the truckStopList where mudflapCode equals to DEFAULT_MUDFLAP_CODE
-        defaultTruckStopShouldBeFound("mudflapCode.equals=" + DEFAULT_MUDFLAP_CODE);
+        // Get all the truckStopList where racingCode equals to DEFAULT_RACING_CODE
+        defaultTruckStopShouldBeFound("racingCode.equals=" + DEFAULT_RACING_CODE);
 
-        // Get all the truckStopList where mudflapCode equals to UPDATED_MUDFLAP_CODE
-        defaultTruckStopShouldNotBeFound("mudflapCode.equals=" + UPDATED_MUDFLAP_CODE);
+        // Get all the truckStopList where racingCode equals to UPDATED_RACING_CODE
+        defaultTruckStopShouldNotBeFound("racingCode.equals=" + UPDATED_RACING_CODE);
     }
 
     @Test
     @Transactional
-    public void getAllTruckStopsByMudflapCodeIsInShouldWork() throws Exception {
+    public void getAllTruckStopsByRacingCodeIsInShouldWork() throws Exception {
         // Initialize the database
         truckStopRepository.saveAndFlush(truckStop);
 
-        // Get all the truckStopList where mudflapCode in DEFAULT_MUDFLAP_CODE or UPDATED_MUDFLAP_CODE
-        defaultTruckStopShouldBeFound("mudflapCode.in=" + DEFAULT_MUDFLAP_CODE + "," + UPDATED_MUDFLAP_CODE);
+        // Get all the truckStopList where racingCode in DEFAULT_RACING_CODE or UPDATED_RACING_CODE
+        defaultTruckStopShouldBeFound("racingCode.in=" + DEFAULT_RACING_CODE + "," + UPDATED_RACING_CODE);
 
-        // Get all the truckStopList where mudflapCode equals to UPDATED_MUDFLAP_CODE
-        defaultTruckStopShouldNotBeFound("mudflapCode.in=" + UPDATED_MUDFLAP_CODE);
+        // Get all the truckStopList where racingCode equals to UPDATED_RACING_CODE
+        defaultTruckStopShouldNotBeFound("racingCode.in=" + UPDATED_RACING_CODE);
     }
 
     @Test
     @Transactional
-    public void getAllTruckStopsByMudflapCodeIsNullOrNotNull() throws Exception {
+    public void getAllTruckStopsByRacingCodeIsNullOrNotNull() throws Exception {
         // Initialize the database
         truckStopRepository.saveAndFlush(truckStop);
 
-        // Get all the truckStopList where mudflapCode is not null
-        defaultTruckStopShouldBeFound("mudflapCode.specified=true");
+        // Get all the truckStopList where racingCode is not null
+        defaultTruckStopShouldBeFound("racingCode.specified=true");
 
-        // Get all the truckStopList where mudflapCode is null
-        defaultTruckStopShouldNotBeFound("mudflapCode.specified=false");
+        // Get all the truckStopList where racingCode is null
+        defaultTruckStopShouldNotBeFound("racingCode.specified=false");
     }
 
     @Test
@@ -742,7 +742,7 @@ public class TruckStopResourceIT {
             .andExpect(jsonPath("$.[*].city").value(hasItem(DEFAULT_CITY)))
             .andExpect(jsonPath("$.[*].state").value(hasItem(DEFAULT_STATE)))
             .andExpect(jsonPath("$.[*].zipCode").value(hasItem(DEFAULT_ZIP_CODE)))
-            .andExpect(jsonPath("$.[*].mudflapCode").value(hasItem(DEFAULT_MUDFLAP_CODE)));
+            .andExpect(jsonPath("$.[*].racingCode").value(hasItem(DEFAULT_RACING_CODE)));
 
         // Check, that the count call also returns 1
         restTruckStopMockMvc.perform(get("/api/truck-stops/count?sort=id,desc&" + filter))
@@ -797,7 +797,7 @@ public class TruckStopResourceIT {
             .city(UPDATED_CITY)
             .state(UPDATED_STATE)
             .zipCode(UPDATED_ZIP_CODE)
-            .mudflapCode(UPDATED_MUDFLAP_CODE);
+            .racingCode(UPDATED_RACING_CODE);
         TruckStopDTO truckStopDTO = truckStopMapper.toDto(updatedTruckStop);
 
         restTruckStopMockMvc.perform(put("/api/truck-stops")
@@ -816,7 +816,7 @@ public class TruckStopResourceIT {
         assertThat(testTruckStop.getCity()).isEqualTo(UPDATED_CITY);
         assertThat(testTruckStop.getState()).isEqualTo(UPDATED_STATE);
         assertThat(testTruckStop.getZipCode()).isEqualTo(UPDATED_ZIP_CODE);
-        assertThat(testTruckStop.getMudflapCode()).isEqualTo(UPDATED_MUDFLAP_CODE);
+        assertThat(testTruckStop.getRacingCode()).isEqualTo(UPDATED_RACING_CODE);
 
         // Validate the TruckStop in Elasticsearch
         verify(mockTruckStopSearchRepository, times(1)).save(testTruckStop);
@@ -884,7 +884,7 @@ public class TruckStopResourceIT {
             .andExpect(jsonPath("$.[*].city").value(hasItem(DEFAULT_CITY)))
             .andExpect(jsonPath("$.[*].state").value(hasItem(DEFAULT_STATE)))
             .andExpect(jsonPath("$.[*].zipCode").value(hasItem(DEFAULT_ZIP_CODE)))
-            .andExpect(jsonPath("$.[*].mudflapCode").value(hasItem(DEFAULT_MUDFLAP_CODE)));
+            .andExpect(jsonPath("$.[*].racingCode").value(hasItem(DEFAULT_RACING_CODE)));
     }
 
     @Test

@@ -1,19 +1,19 @@
-package us.mudflap.web.rest;
+package us.rabtrade.web.rest;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.config.Constants;
-import us.mudflap.domain.Authority;
-import us.mudflap.domain.User;
-import us.mudflap.repository.AuthorityRepository;
-import us.mudflap.repository.UserRepository;
-import us.mudflap.security.AuthoritiesConstants;
-import us.mudflap.service.MailService;
-import us.mudflap.service.UserService;
-import us.mudflap.service.dto.PasswordChangeDTO;
-import us.mudflap.service.dto.UserDTO;
-import us.mudflap.web.rest.errors.ExceptionTranslator;
-import us.mudflap.web.rest.vm.KeyAndPasswordVM;
-import us.mudflap.web.rest.vm.ManagedUserVM;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.config.Constants;
+import us.rabtrade.domain.Authority;
+import us.rabtrade.domain.User;
+import us.rabtrade.repository.AuthorityRepository;
+import us.rabtrade.repository.UserRepository;
+import us.rabtrade.security.AuthoritiesConstants;
+import us.rabtrade.service.MailService;
+import us.rabtrade.service.UserService;
+import us.rabtrade.service.dto.PasswordChangeDTO;
+import us.rabtrade.service.dto.UserDTO;
+import us.rabtrade.web.rest.errors.ExceptionTranslator;
+import us.rabtrade.web.rest.vm.KeyAndPasswordVM;
+import us.rabtrade.web.rest.vm.ManagedUserVM;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -43,7 +43,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link AccountResource} REST controller.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 public class AccountResourceIT {
 
     @Autowired

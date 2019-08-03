@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>us.mudflap</groupId>
-    <artifactId>mudflap-truckstop-web</artifactId>
+    <groupId>us.rabtrade</groupId>
+    <artifactId>racing-company-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Mudflap Truckstop Web</name>
+    <name>Racing Company Web</name>
 
     <repositories>
         <!-- TODO To remove after final JHipster release -->
@@ -608,7 +608,7 @@
                             <image>adoptopenjdk:11-jre-hotspot</image>
                         </from>
                         <to>
-                            <image>mudflaptruckstopweb:latest</image>
+                            <image>racingcompanyweb:latest</image>
                         </to>
                         <container>
                             <entrypoint>
@@ -635,11 +635,11 @@
                         <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                         <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                         <driver>org.postgresql.Driver</driver>
-                        <url>jdbc:postgresql://localhost:5432/mudflapTruckstopWeb</url>
+                        <url>jdbc:postgresql://localhost:5432/racingCompanyWeb</url>
                         <defaultSchemaName></defaultSchemaName>
                         <username>postgres</username>
                         <password>123456</password>
-                        <referenceUrl>hibernate:spring:us.mudflap.domain?dialect=org.hibernate.dialect.PostgreSQL95Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
+                        <referenceUrl>hibernate:spring:us.rabtrade.domain?dialect=org.hibernate.dialect.PostgreSQL95Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                         <verbose>true</verbose>
                         <logging>debug</logging>
                         <contexts>!test</contexts>
@@ -845,14 +845,14 @@
                             <configuration>
                                 <inputSpec>${project.basedir}/src/main/resources/swagger/api.yml</inputSpec>
                                 <generatorName>spring</generatorName>
-                                <apiPackage>us.mudflap.web.api</apiPackage>
-                                <modelPackage>us.mudflap.web.api.model</modelPackage>
+                                <apiPackage>us.rabtrade.web.api</apiPackage>
+                                <modelPackage>us.rabtrade.web.api.model</modelPackage>
                                 <supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
                                 <importMappings>Problem=org.zalando.problem.Problem</importMappings>
                                 <validateSpec>true</validateSpec>
                                 <configOptions>
                                     <delegatePattern>true</delegatePattern>
-                                    <title>mudflap-truckstop-web</title>
+                                    <title>racing-company-web</title>
                                 </configOptions>
                             </configuration>
                         </execution>

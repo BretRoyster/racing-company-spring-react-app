@@ -1,9 +1,9 @@
-package us.mudflap.repository;
+package us.rabtrade.repository;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.config.Constants;
-import us.mudflap.config.audit.AuditEventConverter;
-import us.mudflap.domain.PersistentAuditEvent;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.config.Constants;
+import us.rabtrade.config.audit.AuditEventConverter;
+import us.rabtrade.domain.PersistentAuditEvent;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +22,12 @@ import java.util.List;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static us.mudflap.repository.CustomAuditEventRepository.EVENT_DATA_COLUMN_MAX_LENGTH;
+import static us.rabtrade.repository.CustomAuditEventRepository.EVENT_DATA_COLUMN_MAX_LENGTH;
 
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIT {
 

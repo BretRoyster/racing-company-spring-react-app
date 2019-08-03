@@ -1,4 +1,4 @@
-package us.mudflap.cucumber.stepdefs;
+package us.rabtrade.cucumber.stepdefs;
 
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
@@ -9,7 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import us.mudflap.web.rest.UserResource;
+import us.rabtrade.web.rest.UserResource;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;

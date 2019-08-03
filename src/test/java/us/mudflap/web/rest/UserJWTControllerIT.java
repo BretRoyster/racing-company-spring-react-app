@@ -1,11 +1,11 @@
-package us.mudflap.web.rest;
+package us.rabtrade.web.rest;
 
-import us.mudflap.MudflapTruckstopWebApp;
-import us.mudflap.domain.User;
-import us.mudflap.repository.UserRepository;
-import us.mudflap.security.jwt.TokenProvider;
-import us.mudflap.web.rest.errors.ExceptionTranslator;
-import us.mudflap.web.rest.vm.LoginVM;
+import us.rabtrade.RacingCompanyWebApp;
+import us.rabtrade.domain.User;
+import us.rabtrade.repository.UserRepository;
+import us.rabtrade.security.jwt.TokenProvider;
+import us.rabtrade.web.rest.errors.ExceptionTranslator;
+import us.rabtrade.web.rest.vm.LoginVM;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +27,7 @@ import static org.hamcrest.Matchers.not;
 /**
  * Integration tests for the {@link UserJWTController} REST controller.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 public class UserJWTControllerIT {
 
     @Autowired

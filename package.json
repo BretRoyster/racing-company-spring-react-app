@@ -1,7 +1,7 @@
 {
-  "name": "mudflap-truckstop-web",
+  "name": "racing-company-web",
   "version": "0.0.0",
-  "description": "Description for mudflapTruckstopWeb",
+  "description": "Description for racingCompanyWeb",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

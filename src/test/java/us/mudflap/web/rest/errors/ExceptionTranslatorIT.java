@@ -1,6 +1,6 @@
-package us.mudflap.web.rest.errors;
+package us.rabtrade.web.rest.errors;
 
-import us.mudflap.MudflapTruckstopWebApp;
+import us.rabtrade.RacingCompanyWebApp;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests {@link ExceptionTranslator} controller advice.
  */
-@SpringBootTest(classes = MudflapTruckstopWebApp.class)
+@SpringBootTest(classes = RacingCompanyWebApp.class)
 public class ExceptionTranslatorIT {
 
     @Autowired
