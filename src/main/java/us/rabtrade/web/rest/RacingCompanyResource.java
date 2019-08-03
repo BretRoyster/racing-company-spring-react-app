@@ -68,6 +68,7 @@ public class RacingCompanyResource {
             throw new BadRequestAlertException("A new racingCompany cannot already have an ID", ENTITY_NAME, "idexists");
         }
         RacingCompanyDTO result = racingCompanyService.save(racingCompanyDTO);
+        result.setId(1L); // For Demo...
         return ResponseEntity.created(new URI("/api/racing-companies/" + result.getId()))
             .headers(HeaderUtil.createEntityCreationAlert(applicationName, false, ENTITY_NAME, result.getId().toString()))
             .body(result);
