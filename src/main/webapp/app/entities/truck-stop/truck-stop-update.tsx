@@ -122,7 +122,7 @@ export class TruckStopUpdate extends React.Component<ITruckStopUpdateProps, ITru
                 </AvGroup>
                 <AvGroup>
                   <Label id="opisPriceLabel" for="truck-stop-opisPrice">
-                    Opis Price
+                    GAS Price
                   </Label>
                   <AvField
                     id="truck-stop-opisPrice"

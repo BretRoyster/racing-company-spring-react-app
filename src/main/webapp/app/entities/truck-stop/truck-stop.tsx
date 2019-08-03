@@ -78,10 +78,10 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
     return (
       <div>
         <h2 id="truck-stop-heading">
-          Pit Stops
+          Racing Companies
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
             <FontAwesomeIcon icon="plus" />
-            &nbsp; Create new Pit Stop
+            &nbsp; Create new Racing Company
           </Link>
         </h2>
         <Row>
@@ -181,7 +181,7 @@ export class TruckStop extends React.Component<ITruckStopProps, ITruckStopState>
               </tbody>
             </Table>
           ) : (
-            <div className="alert alert-warning">No Pit Stops found</div>
+            <div className="alert alert-warning">No Racing Companies found</div>
           )}
         </div>
         <div className={truckStopList && truckStopList.length > 0 ? '' : 'd-none'}>

@@ -114,13 +114,31 @@ class LoginModal extends React.Component<ILoginModalProps, any> {
             </span>
             <div className="callout-container">
               <p>
-                <strong>I'm Bret.</strong>
+                <a href="https://www.linkedin.com/in/bretroyster/" target="_blank">
+                  <img src="content/images/bret.jpg" style={{ height: 100 }} alt="Bret" />
+                </a>
                 <br />
                 <br />
-                This is my "Racing Company" demo webapp!
+                <a href="https://www.linkedin.com/in/bretroyster/" target="_blank">
+                  I'm Bret!
+                </a>{' '}
+                Great to meet you!
                 <br />
                 <br />
-                Log in with each user type to learn more about the demo:
+                This is my{' '}
+                <a href="https://github.com/BretRoyster/racing-company-spring-react-app" target="_blank">
+                  "Racing Company"
+                </a>{' '}
+                (GitHub) demo web application!
+                <br />
+                <br />I do professional work for large companies, and through{' '}
+                <a href="https://www.upwork.com/freelancers/~014ea736643a3c213b" target="_blank">
+                  Upwork.com here
+                </a>
+                .
+                <br />
+                <br />
+                <strong>Learn more about this demo</strong> by logging in as each user type:
                 <ul>
                   <li>user / user</li>
                   <li>admin / admin</li>

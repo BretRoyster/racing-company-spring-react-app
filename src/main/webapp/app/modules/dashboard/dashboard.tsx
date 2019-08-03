@@ -144,7 +144,7 @@ class PriceForm extends React.Component<any, any> {
     const truckstopname_div = (
       <div className="truckstopname-div">
         {/* <h4>{this.state.name}</h4>  */}
-        <h4>Bret's Pit Stop</h4>
+        <h4>Bret's Racing Company</h4>
         <p>
           {/* {this.state.city}, {this.state.state} */}
           Rogers, AR
@@ -197,9 +197,11 @@ class PriceForm extends React.Component<any, any> {
       cssclass_update = 'autoSelected setpricemode-container';
       modal_text = (
         <div className="modalprice-inner">
-          <ModalHeader size={2} text={'Are you sure?'} />
+          <ModalHeader size={2} text={'Are you sure?'}>
+            INCOMPLETE MODAL
+          </ModalHeader>
           <p>
-            The partner price will be set to ${this.state.base_price} + Your OPIS Price. To change this, come back anytime to the dashboard
+            The partner price will be set to ${this.state.base_price} + Your GAS Price. To change this, come back anytime to the dashboard
             and enter a new price, or manually control your partner price with Manual Pricing
           </p>
           <Button type="pricechange-save" text="APPLY AUTOMATIC PRICE" onClick={this.save} />
@@ -258,7 +260,7 @@ class PriceForm extends React.Component<any, any> {
                           }}
                         />
                       </div>
-                      <Button color="primary" type="pricechange-save" className="btn-pricechange-save" onClick={this.save_modal}>
+                      <Button color="primary" type="pricechange-save" className="btn-pricechange-save" onClick={this.save_modal} disabled>
                         Save
                       </Button>
                     </AvForm>
@@ -266,7 +268,7 @@ class PriceForm extends React.Component<any, any> {
                 </div>
                 {saved}
                 <div className="pricelist-ctr">
-                  {opis_price}
+                  {/* {opis_price} */}
                   {partner_price}
                 </div>
 
@@ -285,15 +287,27 @@ class PriceForm extends React.Component<any, any> {
         {/* Demo Site */}
         {this.state.callout ? (
           <div className="callout">
-            <div className="callout-header">{storyIndex > 0 ? `(...continued...)` : 'Story Time!'}</div>
+            {/* <div className="callout-header">{storyIndex > 0 ? `(...continued...)` : 'Story Time!'}</div> */}
+            <div className="callout-header">{'Story Time!'}</div>
             <span className="closebtn" onClick={this.closeCallout}>
               ×
             </span>
             <div className="callout-container">
               <p>
+                <a href="https://www.linkedin.com/in/bretroyster/" target="_blank">
+                  <img src="content/images/bret.jpg" style={{ height: 100 }} alt="Bret" />
+                </a>
+                <br />
+                <br />
                 {story}
                 <br />
                 <br />
+                {storyIndex !== 0 ? (
+                  <Button color="primary" onClick={this.goBackInStory}>
+                    Back
+                  </Button>
+                ) : null}
+                &nbsp;
                 <Button color="danger" onClick={this.continueStory(hasNextStory)}>
                   {hasNextStory ? 'Continue' : 'Thanks for reading!'}
                 </Button>
@@ -323,22 +337,76 @@ class PriceForm extends React.Component<any, any> {
     }
   };
 
+  goBackInStory = () => {
+    this.setState(prevState => ({ storyIndex: prevState.storyIndex - 1 }));
+  };
+
   getStory = index => {
     const continued = `<TODO: Story Continued>`;
     const gitHubMessage = (
       <>
         Checkout this component and its folder{' '}
-        <a href="javascript:void()" target="_blank">
+        <a
+          href="https://github.com/BretRoyster/racing-company-spring-react-app/tree/master/src/main/webapp/app/modules/dashboard"
+          target="_blank"
+        >
           here on GitHub
         </a>{' '}
         (links open in a new tabs).
       </>
     );
+    const dashboardLink = (
+      <a
+        href="https://github.com/BretRoyster/racing-company-spring-react-app/blob/master/src/main/webapp/app/modules/dashboard/dashboard.tsx"
+        target="_blank"
+      >
+        dashboard.tsx
+      </a>
+    );
+    const dashboardScssLink = (
+      <a
+        href="https://github.com/BretRoyster/racing-company-spring-react-app/blob/master/src/main/webapp/app/modules/dashboard/dashboard.scss"
+        target="_blank"
+      >
+        dashboard.scss
+      </a>
+    );
+    const portedStylesScssLink = (
+      <a
+        href="https://github.com/BretRoyster/racing-company-spring-react-app/blob/master/src/main/webapp/app/modules/dashboard/ported-styles.scss"
+        target="_blank"
+      >
+        ported-styles.scss
+      </a>
+    );
+    const portedStylesOverrideScssLink = (
+      <a
+        href="https://github.com/BretRoyster/racing-company-spring-react-app/blob/master/src/main/webapp/app/modules/dashboard/ported-styles-override.scss"
+        target="_blank"
+      >
+        ported-styles-override.scss
+      </a>
+    );
+
     switch (index) {
       case 0:
         return (
           <>
-            <strong>Short version:</strong> Repurposed (unpaid) work for a potential client as a portfolio demo.
+            <strong>What are you looking at?</strong>
+            <br />
+            <br />
+            This demo page was built for a potential client that didn't pan out.
+            <br />
+            <i>(Whoops! It happens!)</i>
+            <br />
+            <br />
+            Please click below to continue.
+          </>
+        );
+      case 1:
+        return (
+          <>
+            <strong>...what is this? (cont)</strong>
             <br />
             <br />
             => Please note that the state of this page is largely as I left it when we broke ties (ie. unfinished).
@@ -347,7 +415,7 @@ class PriceForm extends React.Component<any, any> {
             => Colors, verbiage, and logos have been changed to respect their privacy/copyright (ie. they were not a racing company).
           </>
         );
-      case 1:
+      case 2:
         return (
           <>
             <strong>The goal on this page:</strong>
@@ -364,88 +432,65 @@ class PriceForm extends React.Component<any, any> {
             </small>
           </>
         );
-      case 2:
+      case 3:
         return (
           <>
-            <strong>The goal on this page (cont):</strong>
+            <strong>...goal (cont):</strong>
             <br />
             <br />
-            3) The sub-navbar 'states' work, but I did not migrate over the 'Profile' page; a simple input form to manage the 'Pit Stop'
-            details.
+            3) The sub-navbar 'states' work, but I did not migrate over the 'Profile' page, which was just a simple input form to manage the
+            'Racing Company' details.
             <br />
             <br />
             <small>This page is also not 'wired' to the new Spring Boot back-end & data model, but I might change that...</small>
           </>
         );
-      case 3:
+      case 4:
         return (
           <>
-            <strong>Most interesting problem:</strong>
+            <strong>Most interesting challenge:</strong>
             <br />
             <br />
             {gitHubMessage}
             <br />
             <br />
-            <i>
-              You are looking at{' '}
-              <a href="javascript:void(0)" target="_blank">
-                dashboard.tsx
-              </a>
-            </i>
+            <i>You are looking at {dashboardLink}</i>
+          </>
+        );
+      case 5:
+        return (
+          <>
+            <strong>...challenge (cont):</strong>
             <br />
             <br />
             The challenge was to 'quickly' port the styles (ie. css) of the migrated components without altering the global styles of the
             new ReactJS front-end.
           </>
         );
-      case 4:
+      case 6:
         return (
           <>
-            <strong>Most interesting problem (cont):</strong>
+            <strong>...challenge (cont):</strong>
             <br />
             <br />
             If you inspect the files:
             <ul>
-              <li>
-                <a href="javascript:void(0)" target="_blank">
-                  dashboard.scss
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)" target="_blank">
-                  ported-styles.scss
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)" target="_blank">
-                  ported-styles-override.scss
-                </a>
-              </li>
+              <li>{dashboardScssLink}</li>
+              <li>{portedStylesScssLink}</li>
+              <li>{portedStylesOverrideScssLink}</li>
             </ul>
-            You'll see that{' '}
-            <a href="javascript:void(0)" target="_blank">
-              dashboard.scss
-            </a>{' '}
-            just imports the ported styles (completely unaltered) and then imports{' '}
-            <a href="javascript:void(0)" target="_blank">
-              ported-styles-override.scss
-            </a>{' '}
-            to fix compatibility issues with the new global styles.
-            {/* <br /><br /><small>Part of the idea here was that this 'ugliness' could eventually be factored out with this separation</small> */}
-            {/* <br /><br /><small>{gitHubMessage}</small> */}
+            You'll see that {dashboardScssLink} just imports the ported styles (as {portedStylesScssLink}; mostly unaltered) and then
+            imports {portedStylesOverrideScssLink} to fix compatibility issues of the ReactJS new Front-end.
           </>
         );
-      case 5:
+      case 7:
         return (
           <>
-            <strong>Most interesting problem (cont):</strong>
+            <strong>...challenge (cont):</strong>
             <br />
             <br />
-            Additionally if you inspect{' '}
-            <a href="javascript:void(0)" target="_blank">
-              ported-styles.scss
-            </a>{' '}
-            you'll see that the entire file is guarded by '#ported-styles' & '.navbar-wrap-container'
+            Additionally if you inspect {portedStylesScssLink} you'll see that the entire file is guarded by '#ported-styles' &
+            '.navbar-wrap-container'
             <small>
               <br />
               <br />
@@ -459,10 +504,10 @@ class PriceForm extends React.Component<any, any> {
             {/* <br /><br />(pretty simple - but fast and effective - and again - isolated to potentially be factored out down the line) */}
           </>
         );
-      case 6:
+      case 8:
         return (
           <>
-            <strong>Most interesting problem (cont):</strong>
+            <strong>...challenge (cont):</strong>
             <br />
             <br />
             This effectively "isolated" those styles so that new ReactJS Front-end would not be impacted by the older version's (unaltered)

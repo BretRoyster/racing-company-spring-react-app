@@ -37,7 +37,7 @@ export class TruckStopDetail extends React.Component<ITruckStopDetailProps> {
             </dt>
             <dd>{truckStopEntity.basePrice}</dd>
             <dt>
-              <span id="opisPrice">Opis Price</span>
+              <span id="opisPrice">GAS Price</span>
             </dt>
             <dd>{truckStopEntity.opisPrice}</dd>
             <dt>

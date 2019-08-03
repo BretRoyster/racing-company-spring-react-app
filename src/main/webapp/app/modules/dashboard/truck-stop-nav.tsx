@@ -15,7 +15,7 @@ class TruckStopNav extends React.Component<any, any> {
         css: 'details'
       }
     ];
-    const page_title = 'Pit Stop Dashboard';
+    const page_title = 'Client Dashboard';
 
     const linkHTML = [];
     links.forEach((elem, index) => {
