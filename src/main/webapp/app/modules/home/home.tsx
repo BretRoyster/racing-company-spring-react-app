@@ -24,7 +24,7 @@ export class Home extends React.Component<IHomeProp> {
       return <Redirect to={{ pathname: '/login' }} />;
     }
     if (hasAnyAuthority(this.props.account.authorities, [AUTHORITIES.ADMIN])) {
-      return <Redirect to={{ pathname: '/entity/truck-stop' }} />;
+      return <Redirect to={{ pathname: '/entity/racing-company' }} />;
     }
     return <Redirect to={{ pathname: '/dashboard' }} />;
     //     return (
